@@ -903,6 +903,16 @@
             <span></span>
         </a>
     </div>
+    <script>
+        
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('navbar-container').innerHTML = html);
+
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('footer-container').innerHTML = html);
+    </script>
     <!-- ===============jQuery Frameworks============= -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
@@ -967,13 +977,6 @@
             // Insert combined content into the 'All Courses' tab
             combinedContentDiv.innerHTML = allCoursesContent;
         });
-        fetch('navbar.html')
-            .then(res => res.text())
-            .then(html => document.getElementById('navbar-container').innerHTML = html);
-
-        fetch('footer.html')
-            .then(res => res.text())
-            .then(html => document.getElementById('footer-container').innerHTML = html);
     </script>
 
 </body>

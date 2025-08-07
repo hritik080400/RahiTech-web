@@ -264,6 +264,15 @@
             <span></span>
         </a>
     </div>
+    <script>
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('navbar-container').innerHTML = html);
+
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('footer-container').innerHTML = html);
+    </script>
     <!-- ===============jQuery Frameworks============= -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
@@ -274,15 +283,7 @@
     <script src="assets/js/page/course/course.js"></script>
     <script src="assets/js/script.js"></script>
 
-    <script>
-        fetch('navbar.html')
-            .then(res => res.text())
-            .then(html => document.getElementById('navbar-container').innerHTML = html);
-
-        fetch('footer.html')
-            .then(res => res.text())
-            .then(html => document.getElementById('footer-container').innerHTML = html);
-    </script>
+    
 </body>
 
 </html>
