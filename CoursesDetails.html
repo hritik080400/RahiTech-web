@@ -57,6 +57,16 @@
         }
     </style>
 
+    <script>
+
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('navbar-container').innerHTML = html);
+
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('footer-container').innerHTML = html);
+    </script>
 
 </head>
 
@@ -75,6 +85,11 @@
         <div id="navbar-container"></div>
         <!-- end Navbar -->
 
+        <!-- start inner-banner -->
+        <section class="inner-banner">
+            <h1 class="fw-bold text-center CourseNames">Course Name</h1>
+        </section>
+        <!-- end inner-banner -->
 
         <!-- start counter -->
         <section class="counter-section">
@@ -505,13 +520,6 @@
                 console.error('Error loading JSON:', error);
             });
 
-        fetch('navbar.html')
-            .then(res => res.text())
-            .then(html => document.getElementById('navbar-container').innerHTML = html);
-
-        fetch('footer.html')
-            .then(res => res.text())
-            .then(html => document.getElementById('footer-container').innerHTML = html);
     </script>
 
 

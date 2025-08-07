@@ -22,6 +22,15 @@
     <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/themify-icons.css">
     <link href="assets/css/style.css" rel="stylesheet">
+    <script>
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('navbar-container').innerHTML = html);
+
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('footer-container').innerHTML = html);
+    </script>
 </head>
 
 <body>
@@ -139,16 +148,6 @@
     <script src="assets/js/jquery.fancybox.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/script.js"></script>
-
-    <script>
-        fetch('navbar.html')
-            .then(res => res.text())
-            .then(html => document.getElementById('navbar-container').innerHTML = html);
-
-        fetch('footer.html')
-            .then(res => res.text())
-            .then(html => document.getElementById('footer-container').innerHTML = html);
-    </script>
 </body>
 
 </html>

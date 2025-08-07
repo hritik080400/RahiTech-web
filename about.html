@@ -22,6 +22,15 @@
     <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="assets/css/themify-icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('navbar-container').innerHTML = html);
+
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('footer-container').innerHTML = html);
+    </script>
 </head>
 
 <body>
@@ -457,15 +466,6 @@
       }
       console.log("Hritik Year");
     </script> -->
-    <script>
-        fetch('navbar.html')
-            .then(res => res.text())
-            .then(html => document.getElementById('navbar-container').innerHTML = html);
-
-        fetch('footer.html')
-            .then(res => res.text())
-            .then(html => document.getElementById('footer-container').innerHTML = html);
-    </script>
 </body>
 
 </html>
