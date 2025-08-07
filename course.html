@@ -28,7 +28,16 @@
     font-size: calc(1.325rem + .9vw);
 }
     </style> -->
-    
+    <script>
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('navbar-container').innerHTML = html);
+
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('footer-container').innerHTML = html);
+    </script>
+
 
 </head>
 
@@ -42,90 +51,11 @@
     </div>
     <!--end preloader-->
     <div class="page-wrapper">
-        <!-- start top header -->
-        <header class="top-header py-2 bg-dark">
-    <div class="container">
-        <div class="row align-items-center">
-            <!-- Left side - Call to action buttons -->
-            <div class="col-xl-3 col-lg-4 col-md-12 text-start top-btn">
-                <a href="contact.html" class="btn theme-Red me-2">
-                    <i class="fa fa-calendar-check-o me-2"></i>Free Consultation
-                </a>
-                <a href="tel:+919876543210" class="btn theme-Red">
-                    <i class="fa fa-phone me-2"></i>Call Now
-                </a>
-            </div>
-            
-            <!-- Middle - Announcement icon -->
-            <div class="col-xl-2 col-lg-3 col-md-4 py-2 fw-bold f-15 announcement text-white">
-                <i class="fa fa-bullhorn me-3 color-orange"></i>
-                <span>Hot Offers</span>
-            </div>
-            
-            <!-- Right side - Marquee text -->
-            <div class="col-xl-7 col-lg-5 col-md-8">
-                <p class="marquee text-white mb-0">
-                    <span>
-                        🚀 Limited Time Offer: Get 15% off your first .NET project! 
-                        ⚡ Angular + .NET Core Specialists | 
-                        🔍 SQL Database Optimization Services | 
-                        💻 WinForms Modernization Packages Available
-                    </span>
-                </p>
-            </div>
-        </div>
-    </div>
-</header>
-        <!-- end top header -->
-        <!-- start main header -->
-        <header class="main-header" id="header">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                    <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/logo.png" style="width: 150px;" class="img-fluid" alt="Edusquad">
-                </a>
-                    <span class="navbar-toggler">
-                    <i class="fa fa-bars" onclick="openNav()"></i>
-                </span>
-                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="course.html">Course</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="gallery.html">Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="blog.html">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </header>
-        <!-- end main header -->
-        <!-- start side menu -->
-        <div class="sidenav" id="mySidenav">
-            <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>
-            <div class="sidenav-links pt-4">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="course.html">Course</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-        <!-- end side menu -->
+
+        <!-- Start Header -->
+        <div id="navbar-container"></div>
+        <!-- End Header -->
+
         <!-- start inner-banner -->
         <section class="inner-banner">
             <h1 class="fw-bold text-center">Course</h1>
@@ -144,160 +74,128 @@
                 </div>
                 <ul class="nav nav-pills  justify-content-center" id="pills-tab" role="tablist">
                     <li class="nav-item">
-                        <a aria-selected="true" class="nav-link active" data-bs-toggle="pill" href="#showall" id="showall-tab" role="tab">All Courses</a>
-                    </li>
-                     <li class="nav-item">
-                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#SoftwareDevelopment" id="SoftwareDevelopment-tab" role="tab">Software Development</a>
+                        <a aria-selected="true" class="nav-link active" data-bs-toggle="pill" href="#showall"
+                            id="showall-tab" role="tab">All Courses</a>
                     </li>
                     <li class="nav-item">
-                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#DA" id="DA-tab" role="tab">Data & Business Analytics</a>
-                    </li> 
-                    <li class="nav-item">
-                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#IMS" id="IMS" role="tab">Infrastructure Management Services (IMS)</a>
+                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#SoftwareDevelopment"
+                            id="SoftwareDevelopment-tab" role="tab">Software Development</a>
                     </li>
                     <li class="nav-item">
-                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#Designing" id="Designing-tab" role="tab">Job Oriented</a>
+                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#DA" id="DA-tab"
+                            role="tab">Data & Business Analytics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#IMS" id="IMS"
+                            role="tab">Infrastructure Management Services (IMS)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#Designing"
+                            id="Designing-tab" role="tab">Job Oriented</a>
                     </li>
 
                     <li class="nav-item">
-                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#Designing" id="Designing-tab" role="tab">Modular</a>
+                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#Designing"
+                            id="Designing-tab" role="tab">Modular</a>
                     </li>
                     <li class="n  av-item">
-                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#Designing" id="Designing-tab" role="tab">Cyber Security</a>
+                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#Designing"
+                            id="Designing-tab" role="tab">Cyber Security</a>
                     </li>
                     <li class="n  av-item">
-                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#Cisco" id="Cisco-tab" role="tab">Cisco</a>
+                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#Cisco" id="Cisco-tab"
+                            role="tab">Cisco</a>
                     </li>
-                     <li class="n  av-item">
-                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#Linux" id="Linux-tab" role="tab">Linux</a>
+                    <li class="n  av-item">
+                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#Linux" id="Linux-tab"
+                            role="tab">Linux</a>
                     </li>
 
                     <li class="n  av-item">
-                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#Virtualization" id="Virtualization-tab" role="tab">Virtualization</a>
-                    </li>
-
-                     <li class="n  av-item">
-                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#Virtualization" id="Virtualization-tab" role="tab">Virtualization</a>
+                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#Virtualization"
+                            id="Virtualization-tab" role="tab">Virtualization</a>
                     </li>
 
                     <li class="n  av-item">
-                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#MicrosoftHardware" id="MicrosoftHardware-tab" role="tab">MicrosoftHardware</a>
-                    </li>
-
-                     <li class="n  av-item">
-                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#MicrosoftSoftware" id="MicrosoftSoftware-tab" role="tab">MicrosoftSoftware</a>
-                    </li>
-
-                     <li class="n  av-item">
-                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#Java" id="Java-tab" role="tab">Java</a>
-                    </li>
-                    <li class="n  av-item">
-                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#WebDesign" id="WebDesign-tab" role="tab">WebDesign</a>
-                    </li>
-                    <li class="n  av-item">
-                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#Testing" id="Testing-tab" role="tab">Testing</a>
+                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#Virtualization"
+                            id="Virtualization-tab" role="tab">Virtualization</a>
                     </li>
 
                     <li class="n  av-item">
-                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#MobileandOthers" id="MobileandOthers-tab" role="tab">Mobile & Others</a>
+                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#MicrosoftHardware"
+                            id="MicrosoftHardware-tab" role="tab">MicrosoftHardware</a>
                     </li>
-                    
+
+                    <li class="n  av-item">
+                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#MicrosoftSoftware"
+                            id="MicrosoftSoftware-tab" role="tab">MicrosoftSoftware</a>
+                    </li>
+
+                    <li class="n  av-item">
+                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#Java" id="Java-tab"
+                            role="tab">Java</a>
+                    </li>
+                    <li class="n  av-item">
+                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#WebDesign"
+                            id="WebDesign-tab" role="tab">WebDesign</a>
+                    </li>
+                    <li class="n  av-item">
+                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#Testing" id="Testing-tab"
+                            role="tab">Testing</a>
+                    </li>
+
+                    <li class="n  av-item">
+                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#MobileandOthers"
+                            id="MobileandOthers-tab" role="tab">Mobile & Others</a>
+                    </li>
+
                 </ul>
                 <div class="row">
                     <div class="tab-content" id="pills-tabContent">
-                        <div aria-labelledby="showall-tab" class="tab-pane  fade show active" id="showall" role="tabpanel">
-                            <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
-                                <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Web Development</h5>
-                                    <p>Many desktop publishing packages and web on page editors now use lorem Ipsum</p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html?course=Angular">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
-                                </div>
-                            </div>
-                            <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="1" src="assets/images/course_1.png">
-                                <!-- <img alt="Course" class="img-fluid" src="assets/images/course_2.png"> -->
-                                <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Business Development</h5>
-                                    <p>Many desktop publishing packages and web on page editors now use lorem Ipsum</p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
-                                </div>
-                            </div>
-                            <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="2" src="assets/images/course_1.png">
-                                <!-- <img alt="" class="card-img" src="assets/images/course_3.png"> -->
-                                <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Business Management</h5>
-                                    <p>Many desktop publishing packages and web on page editors now use lorem Ipsum</p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
-                                </div>
-                            </div>
-                            <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="3" src="assets/images/course_1.png">
-                                <!-- <img alt="Course" class="card-img" src="assets/images/course_6.png"> -->
-                                <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Business Analysis</h5>
-                                    <p>Many desktop publishing packages and web on page editors now use lorem Ipsum</p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
-                                </div>
-                            </div>
-                            <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="4" src="assets/images/course_1.png">
-                                <!-- <img alt="Course" class="card-img" src="assets/images/course_7.png"> -->
-                                <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Management</h5>
-                                    <p>Many desktop publishing packages and web on page editors now use lorem Ipsum</p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
-                                </div>
-                            </div>
-                            <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="5" src="assets/images/course_1.png">
-                                <!-- <img alt="Course" class="card-img" src="assets/images/course_8.png"> -->
-                                <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">UX/UX Design</h5>
-                                    <p>Many desktop publishing packages and web on page editors now use lorem Ipsum</p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
-                                </div>
-                            </div>
+                        <div aria-labelledby="showall-tab" class="tab-pane  fade show active" id="showall"
+                            role="tabpanel">
+                            <div id="all-courses-list"><em>Loading all courses...</em></div>
                         </div>
 
-<div aria-labelledby="SoftwareDevelopment-tab" class="tab-pane fade" id="SoftwareDevelopment" role="tabpanel">
+                        <div aria-labelledby="SoftwareDevelopment-tab" class="tab-pane fade" id="SoftwareDevelopment"
+                            role="tabpanel">
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="6" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="6"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">.NET Development</h5>
-                                    <p>Many desktop publishing packages and web on page editors now use lorem Ipsum</p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html?course=DotNet">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <h5 class="fw-bold" style="height: 45px;">.NET Development</h5>
+                                    <p></p>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html?course=DotNet">Course Detail
+                                        <i class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="7" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="7"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_6.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Java Full Stack </h5>
-                                    <p>Many desktop publishing packages and web on page editors now use lorem Ipsum</p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html?course=Java">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
-                                </div> 
+                                    <h5 class="fw-bold" style="height: 45px;">Java Full Stack </h5>
+                                    <p></p>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html?course=Java">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
+                                </div>
                             </div>
 
-                                <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="8" src="assets/images/course_1.png">
+                            <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="8"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_6.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Web Development (HTML/CSS, JS, React, etc.)</h5>
-                                    <p>Many desktop publishing packages and web on page editors now use lorem Ipsum</p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
-                                </div> 
+                                    <h5 class="fw-bold" style="height: 45px;">Web Development (HTML/CSS, JS, React,
+                                        etc.)</h5>
+                                    <p></p>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
+                                </div>
                             </div>
 
                         </div>
@@ -306,248 +204,291 @@
 
                         <div aria-labelledby="DA-tab" class="tab-pane  fade" id="DA" role="tabpanel">
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Excel</h5>
-                                    <p>Many desktop publishing packages and web on page editors now use lorem Ipsum</p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <h5 class="fw-bold" style="height: 45px;">Excel</h5>
+                                    <p></p>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_6.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">SQL</h5>
-                                    <p>Many desktop publishing packages and web on page editors now use lorem Ipsum</p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
-                                </div> 
+                                    <h5 class="fw-bold" style="height: 45px;">SQL</h5>
+                                    <p></p>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                                <!-- CISCO Section -->
+                        <!-- CISCO Section -->
 
 
                         <div aria-labelledby="Cisco-tab" class="tab-pane fade" id="Cisco" role="tabpanel">
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="img-fluid" src="assets/images/course_2.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">CCNA-Routing and Switching</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">CCNA-Routing and Switching</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">CCNA Security</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">CCNA Security</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_6.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">CCNA Colabration</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">CCNA Colabration</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
 
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="1" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="1"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">CCNE-Routing and Switching</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">CCNE-Routing and Switching</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
 
-                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="2" src="assets/images/course_1.png">
+                            <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="2"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">CCNE-Routing and Switching</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">CCNE-Routing and Switching</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
 
-                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="3" src="assets/images/course_1.png">
+                            <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="3"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">CCNE Security</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">CCNE Security</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
 
-                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="4" src="assets/images/course_1.png">
+                            <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="4"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">CCNE Colaboration</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">CCNE Colaboration</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
 
-                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="5" src="assets/images/course_1.png">
+                            <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="5"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">CCIE-Routing and Switching</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">CCIE-Routing and Switching</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
 
-                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="6" src="assets/images/course_1.png">
+                            <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="6"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">CCIE Security</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">CCIE Security</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
 
-                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="7" src="assets/images/course_1.png">
+                            <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="7"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">CCIE Colaboration</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">CCIE Colaboration</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
 
 
 
-                            
+
                         </div>
 
 
-                         <!-- MicrosoftHardware Section -->
+                        <!-- MicrosoftHardware Section -->
 
 
-                        <div aria-labelledby="MicrosoftHardware-tab" class="tab-pane fade" id="MicrosoftHardware" role="tabpanel">
+                        <div aria-labelledby="MicrosoftHardware-tab" class="tab-pane fade" id="MicrosoftHardware"
+                            role="tabpanel">
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="img-fluid" src="assets/images/course_2.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">MCSA_2012 R2</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">MCSA_2012 R2</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">MCSE PVT Cloud</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">MCSE PVT Cloud</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
-                                </div>
-                            </div>
-
-                                                        <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
-                                <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
-                                <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">MCSA Sql Server</h5>
-                                    <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
-                                </div>
-                            </div>
-
-<div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
-                                <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
-                                <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">SCCM</h5>
-                                    <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
 
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">SCCOM</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">MCSA Sql Server</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
+                                <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
+                                <div class="course-desc py-4 px-3">
+                                    <h5 class="fw-bold" style="height: 45px;">SCCM</h5>
+                                    <p></p>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
+                                <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
+                                <div class="course-desc py-4 px-3">
+                                    <h5 class="fw-bold" style="height: 45px;">SCCOM</h5>
+                                    <p></p>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
 
 
 
-                            </div>
+                        </div>
 
 
 
 
 
-                    <!-- LINUX Section -->
+                        <!-- LINUX Section -->
 
 
                         <div aria-labelledby="Linux-tab" class="tab-pane fade" id="Linux" role="tabpanel">
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="img-fluid" src="assets/images/course_2.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">RHCSA</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">RHCSA</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html?course=RHCSA">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html?course=RHCSA">Course Detail
+                                        <i class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">RHCE</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">RHCE</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html?course=RHCE">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+
+                                    <a class="btn theme-blue " href="./CoursesDetails.html?course=RHCE">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_6.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">RHCVA</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">RHCVA</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html?course=RHCVA">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+
+                                    <a class="btn theme-blue " href="./CoursesDetails.html?course=RHCVA">Course Detail
+                                        <i class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
 
-                            
 
-                            
+
+
                         </div>
 
                         <!-- Java Section -->
@@ -555,57 +496,67 @@
 
                         <div aria-labelledby="Java-tab" class="tab-pane fade" id="Java" role="tabpanel">
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="img-fluid" src="assets/images/course_2.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Core Java</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">Core Java</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">ADV Java</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">ADV Java</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_6.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Struts</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">Struts</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
 
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_6.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Hibernate</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">Hibernate</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
-                                </div>
-                            </div>
-                                <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
-                                <!-- <img alt="Course" class="card-img" src="assets/images/course_6.png"> -->
-                                <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Spring</h5>
-                                    <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
                                     </a>
                                 </div>
                             </div>
-                            
+                            <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
+                                <!-- <img alt="Course" class="card-img" src="assets/images/course_6.png"> -->
+                                <div class="course-desc py-4 px-3">
+                                    <h5 class="fw-bold" style="height: 45px;">Spring</h5>
+                                    <p></p>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+
                         </div>
 
 
@@ -613,141 +564,169 @@
                         <!-- MicrosoftSoftware Section -->
 
 
-                        <div aria-labelledby="MicrosoftSoftware-tab" class="tab-pane fade" id="MicrosoftSoftware" role="tabpanel">
+                        <div aria-labelledby="MicrosoftSoftware-tab" class="tab-pane fade" id="MicrosoftSoftware"
+                            role="tabpanel">
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="img-fluid" src="assets/images/course_2.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">.Net</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">.Net</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">C# .Net</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">C# .Net</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_6.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">ASP.Net</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">ASP.Net</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
 
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_6.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">ADO.Net</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">ADO.Net</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
-                                </div>
-                            </div>
-                            
-                            <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
-                                <!-- <img alt="Course" class="card-img" src="assets/images/course_6.png"> -->
-                                <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">MVC</h5>
-                                    <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
 
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_6.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Sql</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">MVC</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
-                            
+
+                            <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
+                                <!-- <img alt="Course" class="card-img" src="assets/images/course_6.png"> -->
+                                <div class="course-desc py-4 px-3">
+                                    <h5 class="fw-bold" style="height: 45px;">Sql</h5>
+                                    <p></p>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+
                         </div>
 
-                         <!-- WebDesign Section -->
+                        <!-- WebDesign Section -->
 
 
                         <div aria-labelledby="WebDesign-tab" class="tab-pane fade" id="WebDesign" role="tabpanel">
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="img-fluid" src="assets/images/course_2.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">PHP</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">PHP</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html?course=PHP">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+
+                                    <a class="btn theme-blue " href="./CoursesDetails.html?course=PHP">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Angular Js</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">Angular Js</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html?course=AngularJS">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+
+                                    <a class="btn theme-blue " href="./CoursesDetails.html?course=AngularJS">Course
+                                        Detail <i class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_6.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Digital Marketing</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">Digital Marketing</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html?course=DigitalMarketing">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+
+                                    <a class="btn theme-blue "
+                                        href="./CoursesDetails.html?course=DigitalMarketing">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
 
-                            
-                            
+
+
                         </div>
 
 
-                         <!-- Mobile and Others Section -->
+                        <!-- Mobile and Others Section -->
 
 
-                        <div aria-labelledby="MobileandOthers-tab" class="tab-pane fade" id="MobileandOthers" role="tabpanel">
+                        <div aria-labelledby="MobileandOthers-tab" class="tab-pane fade" id="MobileandOthers"
+                            role="tabpanel">
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="img-fluid" src="assets/images/course_2.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Android</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">Android</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html?course=Android">Course Detail
+                                        <i class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Hadoop</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">Hadoop</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
-                            
 
-                            
-                            
+
+
+
                         </div>
 
 
@@ -757,38 +736,44 @@
 
                         <div aria-labelledby="Testing-tab" class="tab-pane fade" id="Testing" role="tabpanel">
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="img-fluid" src="assets/images/course_2.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Manual Testing</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">Manual Testing</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Selenium Ide</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">Selenium Ide</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_6.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Selenium Webdriver</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">Selenium Webdriver</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
 
-                            
-                            
+
+
                         </div>
 
 
@@ -796,174 +781,136 @@
                         <!-- Virtualization Section -->
 
 
-                        <div aria-labelledby="Virtualization-tab" class="tab-pane fade" id="Virtualization" role="tabpanel">
+                        <div aria-labelledby="Virtualization-tab" class="tab-pane fade" id="Virtualization"
+                            role="tabpanel">
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="img-fluid" src="assets/images/course_2.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">VMWARE-NSX</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">VMWARE-NSX</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">VMWARE-ESXI</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">VMWARE-ESXI</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                    src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_6.png"> -->
                                 <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Open Stack</h5>
+                                    <h5 class="fw-bold" style="height: 45px;">Open Stack</h5>
                                     <p></p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                            class="fa fa-angle-double-right ms-2"></i>
+                                    </a>
                                 </div>
                             </div>
 
-                        <div aria-labelledby="Management-tab" class="tab-pane fade" id="IMS" role="tabpanel">
-                            <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
-                                <!-- <img alt="Course" class="img-fluid" src="assets/images/course_2.png"> -->
-                                <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Business Development</h5>
-                                    <p>Many desktop publishing packages and web on page editors now use lorem Ipsum</p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+                            <div aria-labelledby="Management-tab" class="tab-pane fade" id="IMS" role="tabpanel">
+                                <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
+                                    <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                        src="assets/images/course_1.png">
+                                    <!-- <img alt="Course" class="img-fluid" src="assets/images/course_2.png"> -->
+                                    <div class="course-desc py-4 px-3">
+                                        <h5 class="fw-bold" style="height: 45px;">Business Development</h5>
+                                        <p></p>
+                                        <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                                class="fa fa-angle-double-right ms-2"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
+                                    <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                        src="assets/images/course_1.png">
+                                    <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
+                                    <div class="course-desc py-4 px-3">
+                                        <h5 class="fw-bold" style="height: 45px;">Business Management</h5>
+                                        <p></p>
+                                        <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                                class="fa fa-angle-double-right ms-2"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
+                                    <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                        src="assets/images/course_1.png">
+                                    <!-- <img alt="Course" class="card-img" src="assets/images/course_6.png"> -->
+                                    <div class="course-desc py-4 px-3">
+                                        <h5 class="fw-bold" style="height: 45px;">Business Analysis</h5>
+                                        <p></p>
+                                        <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                                class="fa fa-angle-double-right ms-2"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
-                                <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
-                                <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Business Management</h5>
-                                    <p>Many desktop publishing packages and web on page editors now use lorem Ipsum</p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
+
+
+
+
+
+
+
+
+
+                            <div aria-labelledby="Designing-tab" class="tab-pane fade" id="Designing" role="tabpanel">
+                                <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
+                                    <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                        src="assets/images/course_1.png">
+                                    <!-- <img alt="Course" class="img-fluid " src="assets/images/course_1.png"> -->
+                                    <div class="course-desc py-4 px-3">
+                                        <h5 class="fw-bold" style="height: 45px;">Web Development</h5>
+                                        <p></p>
+                                        <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                                class="fa fa-angle-double-right ms-2"></i>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
-                                <!-- <img alt="Course" class="card-img" src="assets/images/course_6.png"> -->
-                                <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Business Analysis</h5>
-                                    <p>Many desktop publishing packages and web on page editors now use lorem Ipsum</p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
-                                </div>
-                            </div>
-                        </div>
+                                <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
+                                    <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                        src="assets/images/course_1.png">
+                                    <!-- <img alt="Course" class="card-img" src="assets/images/course_8.png"> -->
+                                    <div class="course-desc py-4 px-3">
+                                        <h5 class="fw-bold" style="height: 45px;">UX/UX Design</h5>
+                                        <p></p>
+                                        <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i
+                                                class="fa fa-angle-double-right ms-2"></i>
+                                        </a>
 
-
-
-
-
-
-
-
-
-                        <div aria-labelledby="Designing-tab" class="tab-pane fade" id="Designing" role="tabpanel">
-                            <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
-                                <!-- <img alt="Course" class="img-fluid " src="assets/images/course_1.png"> -->
-                                <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">Web Development</h5>
-                                    <p>Many desktop publishing packages and web on page editors now use lorem Ipsum</p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
-                                </div>
-                            </div>
-                            <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course"    class="img-fluid dynamic-img" data-index="0" src="assets/images/course_1.png">
-                                <!-- <img alt="Course" class="card-img" src="assets/images/course_8.png"> -->
-                                <div class="course-desc py-4 px-3">
-                                    <h5 class="fw-bold">UX/UX Design</h5>
-                                    <p>Many desktop publishing packages and web on page editors now use lorem Ipsum</p>
-                                    <a class="btn theme-blue " href="./CoursesDetails.html">Course Detail <i class="fa fa-angle-double-right ms-2"></i>
-                    </a>
-                                
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
         <!-- end course -->
 
-        
 
 
 
-                                
-         <!-- start footer -->
-        <footer class="theme-Black">
-            <div class="container">
-                <div class="footer-top border-bottom pt-5">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6" data-aos="fade-in" data-aos-duration="1050">
-                            <a href="index.html"><img src="assets/images/logo.png" style="width: 150px;" class="img-fluid mb-3" alt="Edusquad"></a>
-                            <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
-                            <ul class="social-icon">
-                                <li><a href="javascript:"><i class="fa fa-facebook-f"></i></a></li>
-                                <li><a href="javascript:"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="javascript:"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="javascript:"><i class="fa fa-skype"></i></a></li>
-                                <li><a href="javascript:"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-2 col-md-6" data-aos="fade-in" data-aos-duration="550">
-                            <h5 class="fw-bold mb-3">Quick Links</h5>
-                            <ul>
-                                <li><a href="index.html"><i class="fa fa-angle-double-right me-2"></i>Home</a></li>
-                                <li><a href="about.html"><i class="fa fa-angle-double-right me-2"></i>About Us</a></li>
-                                <li><a href="course.html"><i class="fa fa-angle-double-right me-2"></i>Student Corner</a></li>
-                                <li><a href="gallery.html"><i class="fa fa-angle-double-right me-2"></i>Gallery</a></li>
-                                <li><a href="contact.html"><i class="fa fa-angle-double-right me-2"></i>Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-6 mb-md-5 mb-4" data-aos="fade-in" data-aos-duration="1050">
-                            <h5 class="fw-bold mb-3">RahiTech Location</h5>
-                            <div class="row">
-                                <div class="container" >
-                            <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8194.870985815887!2d73.81868618966979!3d18.506302187891944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf95013c8af3%3A0xe8d8ce4fde820d9e!2sWaari%20Book%20Cafe!5e0!3m2!1sen!2sin!4v1752287300525!5m2!1sen!2sin"
-                            width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 ps-lg-5  mb-md-5" data-aos="fade-in" data-aos-duration="1050">
-                            <h5 class="fw-bold mb-3">Contact Us</h5>
-                            <ul class="address-icon">
-                                <li class="mb-3"><i class="fa fa-map-marker me-3 color-Red"></i>3rd Floor, Upendra1 09, Shankarao Joshi Rd, opp. Nisaraga Hotel, opposite Padale Palace, Nal Stop, Pandurang Colony, Erandwane, Pune, Maharashtra 411004</li>
-                                <li class="mb-3"><i class="fa fa-map-marker me-3 color-Red"></i>2nd And 3rd Floor, Above Waari Book Cafe, Choice Group, off Karve Road, Jhala Co-Op Housing Society, Kothrud, Pune, Maharashtra 411038</li>
-                                <li class="mb-3"><i class="fa fa-phone me-3 color-Red"></i>+91 9421776347</li>
-                                <li class="mb-3"><i class="fa fa-envelope color-Red me-3"></i>careers@rahitech.com</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom-footer py-3 d-flex justify-content-between">
-                    <p class="mb-0">All Rights Reserved by Rahitech.</p>
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item"><a href="javascript:">Terms of use</a></li>
-                        <li class="list-inline-item"><a href="javascript:">Privacy policy</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
+
+
+        <!-- start footer -->
+        <div id="footer-container"></div>
         <!-- end footer -->
         <a href="#" id="scroll">
-        <span></span>
-      </a>
+            <span></span>
+        </a>
     </div>
     <!-- ===============jQuery Frameworks============= -->
     <script src="assets/js/jquery.min.js"></script>
@@ -976,19 +923,60 @@
     <script src="assets/js/script.js"></script>
 
     <script>
-  
-  fetch('https://picsum.photos/v2/list?page=1&limit=10')  // Replace with ERP Img API
-    .then(res => res.json())
-    .then(data => {
-      const imgs = document.querySelectorAll('.dynamic-img');
-      imgs.forEach((img, i) => {
-        if (data[i]) {
-          img.src = data[i].download_url; 
-        }
-      });
-    })
-    .catch(err => console.error('Image API error:', err));
-</script>
+
+        fetch('https://picsum.photos/v2/list?page=1&limit=10')  // Replace with ERP Img API
+            .then(res => res.json())
+            .then(data => {
+                const imgs = document.querySelectorAll('.dynamic-img');
+                imgs.forEach((img, i) => {
+                    if (data[i]) {
+                        img.src = data[i].download_url;
+                    }
+                });
+            })
+            .catch(err => console.error('Image API error:', err));
+    </script>
+
+    <!-- JavaScript to Dynamically Combine All Tab Content -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const combinedContentDiv = document.getElementById('all-courses-list');
+            const allTabs = document.querySelectorAll('.tab-pane');
+
+            let allCoursesContent = '';
+
+            // Loop through each tab and combine all portfolio items
+            allTabs.forEach(tab => {
+                if (tab.id !== 'showall') { // Skip the 'All Courses' tab itself
+                    const portfolioItems = tab.querySelectorAll('.Portfolio');
+
+                    portfolioItems.forEach(item => {
+                        const title = item.querySelector('.fw-bold').textContent; // Get course title
+                        const image = item.querySelector('img').src; // Get course image
+                        const description = item.querySelector('p').textContent; // Get course description (empty in your case)
+                        const link = item.querySelector('a').href; // Get the course link
+
+                        // Build the content dynamically
+                        allCoursesContent += `
+            <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
+              <img alt="Course" class="img-fluid dynamic-img" src="${image}">
+              <div class="course-desc py-4 px-3">
+                <h5 class="fw-bold" style="height: 45px;">${title}</h5>
+                <p>${description}</p>
+                <a class="btn theme-blue" href="${link}">Course Detail
+                  <i class="fa fa-angle-double-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          `;
+                    });
+                }
+            });
+
+            // Insert combined content into the 'All Courses' tab
+            combinedContentDiv.innerHTML = allCoursesContent;
+        });
+    </script>
 
 </body>
 

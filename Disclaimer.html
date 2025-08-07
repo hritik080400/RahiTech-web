@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Edusquad - Education Template">
+    <!-- ========== Page Title ========== -->
+    <title>RahiTech</title>
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- ========== Google Fonts ========== -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap" rel="stylesheet">
+    <!-- ========== Start Stylesheet ========== -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        img {
+            image-orientation: flip;
+        }
+    </style>
+    <script>
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('navbar-container').innerHTML = html);
+
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('footer-container').innerHTML = html);
+    </script>
+</head>
+
+<body>
+    <!--start preloader-->
+    <div class="preloader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <!--end preloader-->
+    <div class="page-wrapper" id="page-wrapper">
+
+        <!-- start Navbar -->
+        <div id="navbar-container"></div>
+        <!-- end Navbar -->
+
+        <!-- Start Disclaimer And Conditions-->
+        <section class="container-fluid bg-light py-5">
+            <div class="container shadow p-5 bg-white rounded-4">
+                <h2 class="mb-4 text-center fw-bold">Disclaimer Policy</h2>
+                <p><strong>Welcome to rahitech.com website</strong> (the “Site”) Rahitech IT Solutions (collectively
+                    “We” or
+                    “Us”) is an online information service provided by Rahitech IT Solutions, offering services in IT
+                    training, consulting, staffing, etc. Use of the site implies compliance with the terms below.</p>
+
+                <p class="fw-bold text-uppercase">Please read carefully before use:</p>
+                <p>By accessing or using the Site, you agree to be bound by these terms. If you disagree, please do not
+                    use
+                    the Site. We may modify these terms anytime without prior notice. Your continued use will mean
+                    acceptance of changes.</p>
+
+                <p>The information provided is for general purposes. We disclaim all liability for damages arising from
+                    reliance on the website content. While updated periodically, we do not guarantee accuracy or
+                    completeness. Your reliance is at your own risk.</p>
+
+                <p>We may include external links not under our control. We are not responsible for the accuracy or
+                    content
+                    of such websites.</p>
+
+                <p>We are not liable for downtime or technical issues beyond our control but strive to maintain a smooth
+                    user experience.</p>
+
+                <h5 class="mt-4 fw-semibold">Terms and Conditions of Website Use</h5>
+                <ul>
+                    <li><strong>Sensible Use:</strong> You are responsible for maintaining confidentiality of login
+                        information. You are accountable for all activities under your account.</li>
+                    <li><strong>Restricted Access:</strong> Unauthorized access methods, including unethical or
+                        automated
+                        means, are strictly prohibited.</li>
+                    <li><strong>No Duplication:</strong> Copying, duplicating, reproducing, selling, or trading any
+                        content
+                        is strictly forbidden.</li>
+                    <li><strong>Consequences:</strong> You are solely responsible for any legal or financial
+                        consequences
+                        due to unauthorized activities.</li>
+                </ul>
+
+                <h5 class="fw-semibold mt-3">Limitation of Warranty</h5>
+                <p>By using our website, you agree all services are provided "as is" and "as available" with no
+                    warranties
+                    of any kind.</p>
+
+                <h5 class="fw-semibold mt-3">Termination of Use</h5>
+                <p>We may suspend or terminate your access at any time, with or without notice, for any reason.</p>
+
+                <h5 class="fw-semibold mt-3">Refund Policy</h5>
+                <p>No refunds will be issued for any online product purchases.</p>
+
+                <h5 class="fw-semibold mt-3">Copyrights / Trademarks</h5>
+                <p>All content, logos, and graphics on rahitech.com are copyrighted and owned by Rahitech IT Solutions.
+                    Unauthorized use may lead to legal action.</p>
+
+                <h5 class="fw-semibold mt-3">Contact Us</h5>
+                <p>If you have questions about these terms, feel free to contact us at our Head Office, Karve Road,
+                    Pune-411038, Maharashtra. Phone: <a href="tel:+919421776347">+91-9421776347</a></p>
+            </div>
+        </section>
+
+        <!--End Disclaimer And Conditions-->
+
+
+
+
+
+
+
+
+
+        <!-- start footer -->
+        <div id="footer-container"></div>
+        <!-- end footer -->
+        <a href="#" id="scroll">
+            <span></span>
+        </a>
+    </div>
+
+    <script>
+
+
+        function gateDate() {
+
+            today = new Date();
+
+            day = today.getDay();
+
+            daysForThursday = (4 - day + 7) % 7;
+
+            nextThursday = new Date(today);
+
+            nextThursday.setDate(today.getDate() + daysForThursday);
+
+            return nextThursday.toDateString();
+
+        }
+
+        for (let i = 0; i < 3; i++) {
+            document.getElementsByClassName("nextThursday").item(i).innerHTML = gateDate();
+
+        }
+
+        //   alert("Today is :- "+ new Date());
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector('.left-btn')?.addEventListener('click', function () {
+                console.log('clicked');
+            });
+            document.querySelector('.right-btn')?.addEventListener('click', function () {
+                console.log('contact clicked');
+            });
+        });
+        function GetCourse() {
+            let course = document.getElementById('FormCourses').value;
+
+            //  alert("Course is "+ course);
+
+            window.location.href = "CoursesDetails.html?course=" + encodeURIComponent(course);
+
+        }
+
+    </script>
+    <!-- ===============jQuery Frameworks============= -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/page/home/home.js"></script>
+</body>
+
+</html>

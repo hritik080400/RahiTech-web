@@ -24,10 +24,19 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <style>
-        img{
+        img {
             image-orientation: flip;
         }
     </style>
+    <script>
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('navbar-container').innerHTML = html);
+
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('footer-container').innerHTML = html);
+    </script>
 </head>
 <!--start preloader-->
 <div class="preloader">
@@ -38,90 +47,11 @@
 </div>
 <!--end preloader-->
 <div class="page-wrapper" id="page-wrapper">
-    <!-- start top header -->
-    <header class="top-header py-2 bg-dark">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Left side - Call to action buttons -->
-                <div class="col-xl-3 col-lg-4 col-md-12 text-start top-btn">
-                    <a href="contact.html" class="btn theme-Red me-2">
-                        <i class="fa fa-calendar-check-o me-2"></i>Free Consultation
-                    </a>
-                    <a href="tel:+919876543210" class="btn theme-Black">
-                        <i class="fa fa-phone me-2"></i>Call Now
-                    </a>
-                </div>
 
-                <!-- Middle - Announcement icon -->
-                <div class="col-xl-2 col-lg-3 col-md-4 py-2 fw-bold f-15 announcement text-white">
-                    <i class="fa fa-bullhorn me-3 color-Red"></i>
-                    <span>Hot Offers</span>
-                </div>
+    <!-- Start Header -->
+    <div id="navbar-container"></div>
+    <!-- End Header -->
 
-                <!-- Right side - Marquee text -->
-                <div class="col-xl-7 col-lg-5 col-md-8">
-                    <p class="marquee text-white mb-0">
-                        <span>
-                            🚀 Limited Time Offer: Get 15% off your first .NET project!
-                            ⚡ Angular + .NET Core Specialists |
-                            🔍 SQL Database Optimization Services |
-                            💻 WinForms Modernization Packages Available
-                        </span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- end top header -->
-    <!-- start main header -->
-    <header class="main-header" id="header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/logo.png" style="width: 150px;" class="img-fluid" alt="Edusquad">
-                </a>
-                <span class="navbar-toggler">
-                    <i class="fa fa-bars" onclick="openNav()"></i>
-                </span>
-                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="course.html">Course</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="gallery.html">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Placement</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!-- end main header -->
-    <!-- start side menu -->
-    <div class="sidenav" id="mySidenav">
-        <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>
-        <div class="sidenav-links pt-4">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="course.html">Course</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="blog.html">Placement</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </div>
-    <!-- end side menu -->
     <!-- start slider -->
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
         <ul class="carousel-indicators">
@@ -132,7 +62,7 @@
         </ul>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="assets/images/slider-1.jpg" alt="education" class="img-fluid">
+                <img src="assets/images/slider-23.png" alt="education" class="img-fluid">
                 <div class="carousel-caption animated fadeInLeft delay-0.1s">
                     <h1 class="fw-bold">An investment in knowledge pays the best interest.</h1>
                     <h6 class="banner-desc">We had such a great time in Education</h6>
@@ -140,16 +70,17 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets/images/slider-2.jpg" alt="education" class="img-fluid">
+                <img src="assets/images/slider-28.jpg" alt="education" class="img-fluid">
                 <div class="carousel-caption animated fadeInUp delay-0.1s ">
-                    <h1 class="fw-bold text-dark">Education is what remains after one has forgotten what one has learned in
+                    <h1 class="fw-bold text-dark">Education is what remains after one has forgotten what one has learned
+                        in
                         school.</h1>
                     <h6 class="banner-desc">We had such a great time in Education</h6>
                     <a href="javascript:" class="theme-Red btn mt-3 apply-now">Apply Now</a>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets/images/slider-9.jpeg" alt="education" class="img-fluid">
+                <img src="assets/images/slider-26.png" alt="education" class="img-fluid">
                 <div class="carousel-caption animated fadeInDown delay-0.1s">
                     <h1 class="fw-bold">Education is not the filling of a pail, but the lighting of a fire.</h1>
                     <h6 class="banner-desc">We had such a great time in Education</h6>
@@ -157,7 +88,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets/images/slider-10.jpg" alt="education" class="img-fluid">
+                <img src="assets/images/slider-27.jpg" alt="education" class="img-fluid">
                 <div class="carousel-caption animated zoomIn delay-0.1s">
                     <h1 class="fw-bold">Education is not preparation for life; education is life itself.</h1>
                     <h6 class="banner-desc">We had such a great time in Education</h6>
@@ -168,59 +99,58 @@
     </div>
     <!-- end slider -->
     <!-- start counter -->
-        <section class="counter-section">
-            <div class="container">
-                <div class="counter-box">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="counter" data-aos="fade-up" data-aos-duration="550">
-                                <div class="border-line"></div>
-                                <div class="counter-img">
-                                    <img src="assets/images/icons/Training-Center.png" class="img-fluid" alt=teacher>
-                                </div>
-                                <h5 class="count-text mt-2">Accredited Training Centre</h5>
-                                <h2 class="timer count-title count-number" data-to="300" data-speed="1500">300</h2>
+    <section class="counter-section">
+        <div class="container">
+            <div class="counter-box">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter" data-aos="fade-up" data-aos-duration="550">
+                            <div class="border-line"></div>
+                            <div class="counter-img">
+                                <img src="assets/images/icons/Training-Center.png" class="img-fluid" alt=teacher>
                             </div>
+                            <h5 class="count-text mt-2">Accredited Training Centre</h5>
+                            <h2 class="timer count-title count-number" data-to="300" data-speed="1500">300</h2>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="counter mt-xl-0 mt-lg-0 mt-md-0 mt-sm-0 mt-3" data-aos="fade-up"
-                                data-aos-duration="550">
-                                <div class="border-line"></div>
-                                <div class="counter-img">
-                                    <img src="assets/images/icons/Traning-Support.png" class="img-fluid"
-                                        alt="classroom">
-                                </div>
-                                <h5 class="count-text mt-2">Multiple Training Delivery</h5>
-                                <h2 class="timer count-title count-number" data-to="1700" data-speed="1500">1700</h2>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter mt-xl-0 mt-lg-0 mt-md-0 mt-sm-0 mt-3" data-aos="fade-up"
+                            data-aos-duration="550">
+                            <div class="border-line"></div>
+                            <div class="counter-img">
+                                <img src="assets/images/icons/Traning-Support.png" class="img-fluid" alt="classroom">
                             </div>
+                            <h5 class="count-text mt-2">Multiple Training Delivery</h5>
+                            <h2 class="timer count-title count-number" data-to="1700" data-speed="1500">1700</h2>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="counter mt-xl-0 mt-lg-0 mt-md-4 mt-sm-3 mt-3" data-aos="fade-up"
-                                data-aos-duration="550">
-                                <div class="border-line"></div>
-                                <div class="counter-img">
-                                    <img src="assets/images/icons/Passing-Warranty.png" class="img-fluid" alt="career">
-                                </div>
-                                <h5 class="count-text mt-2">100% Job <br> Guarantee</h5>
-                                <h2 class="timer count-title count-number" data-to="11900" data-speed="1500">11,900</h2>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter mt-xl-0 mt-lg-0 mt-md-4 mt-sm-3 mt-3" data-aos="fade-up"
+                            data-aos-duration="550">
+                            <div class="border-line"></div>
+                            <div class="counter-img">
+                                <img src="assets/images/icons/Passing-Warranty.png" class="img-fluid" alt="career">
                             </div>
+                            <h5 class="count-text mt-2">100% Job <br> Guarantee</h5>
+                            <h2 class="timer count-title count-number" data-to="11900" data-speed="1500">11,900</h2>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="counter mt-xl-0 mt-lg-0 mt-md-4 mt-sm-3 mt-3" data-aos="fade-up"
-                                data-aos-duration="550">
-                                <div class="border-line"></div>
-                                <div class="counter-img">
-                                    <img src="assets/images/icons/support.png" class="img-fluid" alt="activity">
-                                </div>
-                                <h5 class="count-text mt-2">After Training<br> Support</h5>
-                                <h2 class="timer count-title count-number" data-to="157" data-speed="1500">157</h2>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter mt-xl-0 mt-lg-0 mt-md-4 mt-sm-3 mt-3" data-aos="fade-up"
+                            data-aos-duration="550">
+                            <div class="border-line"></div>
+                            <div class="counter-img">
+                                <img src="assets/images/icons/support.png" class="img-fluid" alt="activity">
                             </div>
+                            <h5 class="count-text mt-2">After Training<br> Support</h5>
+                            <h2 class="timer count-title count-number" data-to="157" data-speed="1500">157</h2>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- end counter -->
+        </div>
+    </section>
+    <!-- end counter -->
     <!-- start about us -->
     <section class="about-us" data-aos="fade-up" data-aos-duration="950">
         <div class="container">
@@ -305,7 +235,7 @@
                 </div>
             </div>
             <div class="row" style="align-items: center; justify-content: center;">
-               
+
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12" data-aos="fade-up" data-aos-duration="550">
                     <div class="team-block  mt-xl-0 mt-lg-0 mt-mb-2 mt-sm-2 mt-2">
                         <div class="team-img">
@@ -420,7 +350,8 @@
                                         placeholder="What do you want to learn today?" id="FormCourses">
                                 </div>
                                 <div class="mb-3 col-lg-4 col-md-12">
-                                    <button type="button" class="btn theme-btn theme-Red mb-2 get-course" onclick="GetCourse()">Get Course
+                                    <button type="button" class="btn theme-btn theme-Red mb-2 get-course"
+                                        onclick="GetCourse()">Get Course
                                     </button>
                                 </div>
                             </div>
@@ -458,7 +389,7 @@
                                             </div>
                                             <h3 class="timer count-title count-number" data-to="11900"
                                                 data-speed="1500">11,900</h3>
-                                            <h5 class="count-text mt-2">Visitors</h5>
+                                            <h5 class="count-text mt-2">Placed Students</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -570,7 +501,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 ps-0 small-screen">
                     <div class="video-area">
-                        
+
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 p-5" data-aos="fade-up" data-aos-duration="550">
@@ -856,64 +787,9 @@
         </div>
     </section>
     <!-- end blog -->
-         <!-- start footer -->
-        <footer class="theme-Black">
-            <div class="container">
-                <div class="footer-top border-bottom pt-5">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6" data-aos="fade-in" data-aos-duration="1050">
-                            <a href="index.html"><img  src="assets/images/logo.png" style="width: 150px; background-color: white;" class="img-fluid mb-3" alt="Edusquad"></a>
-             <p>your bright future is our mission!</p>
-                            <ul class="social-icon">
-                                <li><a href="https://www.facebook.com/RahitechSolution"><i class="fa fa-facebook-f"></i></a></li>
-                                <li><a href="https://workspaceupdates.googleblog.com/2023/04/new-community-features-for-google-chat-and-an-update-currents%20.html"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="https://x.com/rahitech"><i class="fa fa-twitter"></i></a></li>
-                                <!-- <li><a href="javascript:"><i class="fa fa-skype"></i></a></li> -->
-                                <li><a href="https://www.linkedin.com/in/rahitech-solution-a92857117"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-2 col-md-6" data-aos="fade-in" data-aos-duration="550">
-                            <h5 class="fw-bold mb-3">Quick Links</h5>
-                            <ul>
-                                <li><a href="index.html"><i class="fa fa-angle-double-right me-2"></i>Home</a></li>
-                                <li><a href="about.html"><i class="fa fa-angle-double-right me-2"></i>About Us</a></li>
-                                <li><a href="course.html"><i class="fa fa-angle-double-right me-2"></i>Student Corner</a></li>
-                                <li><a href="gallery.html"><i class="fa fa-angle-double-right me-2"></i>Gallery</a></li>
-                                <li><a href="contact.html"><i class="fa fa-angle-double-right me-2"></i>Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-6 mb-md-5 mb-4" data-aos="fade-in" data-aos-duration="1050">
-                            <h5 class="fw-bold mb-3">RahiTech Location</h5>
-                            <div class="row">
-                                <div class="container" >
-                            <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8194.870985815887!2d73.81868618966979!3d18.506302187891944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf95013c8af3%3A0xe8d8ce4fde820d9e!2sWaari%20Book%20Cafe!5e0!3m2!1sen!2sin!4v1752287300525!5m2!1sen!2sin"
-                            width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 ps-lg-5  mb-md-5" data-aos="fade-in" data-aos-duration="1050">
-                            <h5 class="fw-bold mb-3">Contact Us</h5>
-                            <ul class="address-icon">
-                                <li class="mb-3"><i class="fa fa-map-marker me-3 color-Red"></i>3rd Floor, Upendra1 09, Shankarao Joshi Rd, opp. Nisaraga Hotel, opposite Padale Palace, Nal Stop, Pandurang Colony, Erandwane, Pune, Maharashtra 411004</li>
-                                <li class="mb-3"><i class="fa fa-map-marker me-3 color-Red"></i>2nd And 3rd Floor, Above Waari Book Cafe, Choice Group, off Karve Road, Jhala Co-Op Housing Society, Kothrud, Pune, Maharashtra 411038</li>
-                                <li class="mb-3"><i class="fa fa-phone me-3 color-Red"></i>+91 9421776347</li>
-                                <li class="mb-3"><i class="fa fa-envelope color-Red me-3"></i>careers@rahitech.com</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom-footer py-3 d-flex justify-content-between">
-                    <p class="mb-0">All Rights Reserved by Rahitech.</p>
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item"><a href="javascript:">Terms of use</a></li>
-                        <li class="list-inline-item"><a href="javascript:">Privacy policy</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-        <!-- end footer -->
+    <!-- start footer -->
+    <div id="footer-container"></div>
+    <!-- end footer -->
     <a href="#" id="scroll">
         <span></span>
     </a>
@@ -946,23 +822,22 @@
     //   alert("Today is :- "+ new Date());
 
 
-  document.addEventListener("DOMContentLoaded", function () {
-      document.querySelector('.left-btn')?.addEventListener('click', function () {
-          console.log('clicked');
-      });
-      document.querySelector('.right-btn')?.addEventListener('click', function () {
-          console.log('contact clicked');
-      });
-  });
-     function GetCourse(){
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector('.left-btn')?.addEventListener('click', function () {
+            console.log('clicked');
+        });
+        document.querySelector('.right-btn')?.addEventListener('click', function () {
+            console.log('contact clicked');
+        });
+    });
+    function GetCourse() {
         let course = document.getElementById('FormCourses').value;
 
-    //  alert("Course is "+ course);
+        //  alert("Course is "+ course);
 
-     window.location.href = "CoursesDetails.html?course="+encodeURIComponent(course);
+        window.location.href = "CoursesDetails.html?course=" + encodeURIComponent(course);
 
-     }
-
+    }
 </script>
 <!-- ===============jQuery Frameworks============= -->
 <script src="assets/js/jquery.min.js"></script>
