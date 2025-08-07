@@ -28,6 +28,39 @@
     font-size: calc(1.325rem + .9vw);
 }
     </style> -->
+
+
+    <script>
+
+        // Fetch images and assign them to elements with class 'dynamic-img'
+
+        fetch('https://picsum.photos/v2/list?page=1&limit=100')
+            .then(res => res.json())
+            .then(data => {
+                const imgs = document.querySelectorAll('.dynamic-img');
+                imgs.forEach((img, i) => {
+                    // Use modulo operator to cycle through images if there are more elements than images
+                    const dataIndex = img.dataset.index ? parseInt(img.dataset.index) : i;
+                    const imageIndex = dataIndex % data.length;
+
+                    if (data[imageIndex]) {
+                        // Add timestamp to avoid caching issues
+                        img.src = `${data[imageIndex].download_url}?${Date.now()}`;
+                        img.alt = data[imageIndex].author; // Use author name as alt text
+                    }
+                });
+            })
+            .catch(err => {
+                console.error('Image API error:', err);
+                // Fallback to local images if API fails
+                document.querySelectorAll('.dynamic-img').forEach(img => {
+                    if (!img.src.includes('assets/images/')) {
+                        img.src = 'assets/images/course_1.png';
+                    }
+                });
+            });
+    </script>
+
     <script>
         fetch('navbar.html')
             .then(res => res.text())
@@ -110,12 +143,6 @@
                         <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#Linux" id="Linux-tab"
                             role="tab">Linux</a>
                     </li>
-
-                    <li class="n  av-item">
-                        <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#Virtualization"
-                            id="Virtualization-tab" role="tab">Virtualization</a>
-                    </li>
-
                     <li class="n  av-item">
                         <a aria-selected="false" class="nav-link" data-bs-toggle="pill" href="#Virtualization"
                             id="Virtualization-tab" role="tab">Virtualization</a>
@@ -216,7 +243,7 @@
                                 </div>
                             </div>
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="1"
                                     src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_6.png"> -->
                                 <div class="course-desc py-4 px-3">
@@ -736,8 +763,8 @@
 
                         <div aria-labelledby="Testing-tab" class="tab-pane fade" id="Testing" role="tabpanel">
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
-                                    src="assets/images/course_1.png">
+                                <img alt="Course" data-index="0" src="assets/images/course_1.png"
+                                    class="dynamic-img img-fluid">
                                 <!-- <img alt="Course" class="img-fluid" src="assets/images/course_2.png"> -->
                                 <div class="course-desc py-4 px-3">
                                     <h5 class="fw-bold" style="height: 45px;">Manual Testing</h5>
@@ -748,7 +775,7 @@
                                 </div>
                             </div>
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="1"
                                     src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_3.png"> -->
                                 <div class="course-desc py-4 px-3">
@@ -760,7 +787,7 @@
                                 </div>
                             </div>
                             <div class="Portfolio" data-aos="fade-up" data-aos-duration="1000">
-                                <img alt="Course" class="img-fluid dynamic-img" data-index="0"
+                                <img alt="Course" class="img-fluid dynamic-img" data-index="2"
                                     src="assets/images/course_1.png">
                                 <!-- <img alt="Course" class="card-img" src="assets/images/course_6.png"> -->
                                 <div class="course-desc py-4 px-3">
@@ -922,20 +949,7 @@
     <script src="assets/js/page/course/course.js"></script>
     <script src="assets/js/script.js"></script>
 
-    <script>
 
-        fetch('https://picsum.photos/v2/list?page=1&limit=10')  // Replace with ERP Img API
-            .then(res => res.json())
-            .then(data => {
-                const imgs = document.querySelectorAll('.dynamic-img');
-                imgs.forEach((img, i) => {
-                    if (data[i]) {
-                        img.src = data[i].download_url;
-                    }
-                });
-            })
-            .catch(err => console.error('Image API error:', err));
-    </script>
 
     <!-- JavaScript to Dynamically Combine All Tab Content -->
     <script>
