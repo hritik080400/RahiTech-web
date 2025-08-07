@@ -22,6 +22,15 @@
     <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="assets/css/themify-icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('navbar-container').innerHTML = html);
+
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('footer-container').innerHTML = html);
+    </script>
 </head>
 
 <body>
@@ -34,90 +43,9 @@
     </div>
     <!--end preloader-->
     <div class="page-wrapper">
-        <!-- start top header -->
-        <header class="top-header py-2 bg-dark">
-    <div class="container">
-        <div class="row align-items-center">
-            <!-- Left side - Call to action buttons -->
-            <div class="col-xl-3 col-lg-4 col-md-12 text-start top-btn">
-                <a href="contact.html" class="btn theme-Red me-2">
-                    <i class="fa fa-calendar-check-o me-2"></i>Free Consultation
-                </a>
-                <a href="tel:+919876543210" class="btn theme-Red">
-                    <i class="fa fa-phone me-2"></i>Call Now
-                </a>
-            </div>
-            
-            <!-- Middle - Announcement icon -->
-            <div class="col-xl-2 col-lg-3 col-md-4 py-2 fw-bold f-15 announcement text-white">
-                <i class="fa fa-bullhorn me-3 color-Red"></i>
-                <span>Hot Offers</span>
-            </div>
-            
-            <!-- Right side - Marquee text -->
-            <div class="col-xl-7 col-lg-5 col-md-8">
-                <p class="marquee text-white mb-0">
-                    <span>
-                        🚀 Limited Time Offer: Get 15% off your first .NET project! 
-                        ⚡ Angular + .NET Core Specialists | 
-                        🔍 SQL Database Optimization Services | 
-                        💻 WinForms Modernization Packages Available
-                    </span>
-                </p>
-            </div>
-        </div>
-    </div>
-</header>
-        <!-- end top header -->
-        <!-- start main header -->
-        <header class="main-header" id="header">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                    <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/logo.png" style="width: 150px;" class="img-fluid" alt="Edusquad">
-                </a>
-                    <span class="navbar-toggler">
-                    <i class="fa fa-bars" onclick="openNav()"></i>
-                </span>
-                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="course.html">Course</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="gallery.html">Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="blog.html">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </header>
-        <!-- end main header -->
-        <!-- start side menu -->
-        <div class="sidenav" id="mySidenav">
-            <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>
-            <div class="sidenav-links pt-4">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="course.html">Course</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-        <!-- end side menu -->
+        <!-- start Navbar -->
+        <div id="navbar-container"></div>
+        <!-- end Navbar -->
         <!-- start inner banner -->
         <section class="inner-banner">
             <h1 class="fw-bold text-center">About Us</h1>
@@ -127,18 +55,27 @@
         <section class="aboutus">
             <div class="container">
                 <div class="row">
-                   
-                   
-                     <div class="col-lg-6  col-md-8 offset-md-2 offset-lg-0 ">
-                        <h1 class="color-orange fw-bold about-title" data-aos="fade-up" data-aos-duration="1000">15+</h1>
-                        <h5 class="fw-bold text-uppercase mb-3" data-aos="fade-up" data-aos-duration="1000">YEARS OF EXPERIANCE</h5>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                            adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+
+                    <div class="col-lg-6  col-md-8 offset-md-2 offset-lg-0 ">
+                        <h1 class="color-orange fw-bold about-title" data-aos="fade-up" data-aos-duration="1000">15+
+                        </h1>
+                        <h5 class="fw-bold text-uppercase mb-3" data-aos="fade-up" data-aos-duration="1000">YEARS OF
+                            EXPERIANCE</h5>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo.</p>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+                            est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                            adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                            aliquam quaerat voluptatem.</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo.</p>
                     </div>
 
-                     <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-6 col-md-12">
                         <div class="about-img">
                             <div class="img_1" data-aos="zoom-in" data-aos-duration="550">
                                 <div class="border-line"></div>
@@ -146,9 +83,10 @@
                             </div>
                             <div class="img_2 d-flex" data-aos="zoom-in" data-aos-duration="1000">
                                 <h5 class="mb-0 text-white">Our Story</h5>
-                                <a href="./assets/images/Rahitech-Video-1.mp4" data-fancybox="gallery" class="video-btn text-white">
-                    <i class="fa fa-play-circle fa-3x"></i>
-                  </a>
+                                <a href="./assets/images/Rahitech-Video-1.mp4" data-fancybox="gallery"
+                                    class="video-btn text-white">
+                                    <i class="fa fa-play-circle fa-3x"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -162,7 +100,7 @@
         <section class="aboutus">
             <div class="container">
                 <div class="row">
-                   
+
                     <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mb-4">
                         <div class="about-img">
                             <div class="img_1" data-aos="zoom-in" data-aos-duration="550">
@@ -171,20 +109,30 @@
                             </div>
                             <div class="img_2 d-flex" data-aos="zoom-in" data-aos-duration="1000">
                                 <h5 class="mb-0 text-white">Our Story</h5>
-                                <a href="./assets/images/Rahitech-Video-1.mp4" data-fancybox="gallery" class="video-btn text-white">
-                    <i class="fa fa-play-circle fa-3x"></i>
-                  </a>
+                                <a href="./assets/images/Rahitech-Video-1.mp4" data-fancybox="gallery"
+                                    class="video-btn text-white">
+                                    <i class="fa fa-play-circle fa-3x"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
 
-                     <div class="col-lg-6 col-md-12 mt-4">
-                        <h1 class="color-orange fw-bold about-title" data-aos="fade-up" data-aos-duration="1000">15+</h1>
-                        <h5 class="fw-bold text-uppercase mb-3" data-aos="fade-up" data-aos-duration="1000">YEARS OF EXPERIANCE</h5>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                            adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <div class="col-lg-6 col-md-12 mt-4">
+                        <h1 class="color-orange fw-bold about-title" data-aos="fade-up" data-aos-duration="1000">15+
+                        </h1>
+                        <h5 class="fw-bold text-uppercase mb-3" data-aos="fade-up" data-aos-duration="1000">YEARS OF
+                            EXPERIANCE</h5>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo.</p>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+                            est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                            adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                            aliquam quaerat voluptatem.</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo.</p>
                     </div>
                 </div>
             </div>
@@ -204,33 +152,42 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="target-block text-white p-lg-5 p-md-3 p-sm-3 p-2 mb-lg-0 mb-mb-0 mb-xl-0 mb-sm-5 mb-4" data-aos="flip-up" data-aos-duration="1000">
+                        <div class="target-block text-white p-lg-5 p-md-3 p-sm-3 p-2 mb-lg-0 mb-mb-0 mb-xl-0 mb-sm-5 mb-4"
+                            data-aos="flip-up" data-aos-duration="1000">
                             <div class="border-line"></div>
                             <i class="fa fa-check-circle fa-3x color-orange mb-3"></i>
                             <h4 class="fw-bold">Mission</h4>
-                            <p>Aliquip exea conse quat nul duis crib irure dolor in reprehenderit voluptate velit ese cillum dolore fugiat.</p>
-                            <a href="javascript:" class="btn text-white ps-0">Read More <i class="fa fa-angle-double-right ms-2"></i>
-                </a>
+                            <p>Aliquip exea conse quat nul duis crib irure dolor in reprehenderit voluptate velit ese
+                                cillum dolore fugiat.</p>
+                            <a href="javascript:" class="btn text-white ps-0">Read More <i
+                                    class="fa fa-angle-double-right ms-2"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="target-block text-white  p-lg-5 p-md-3 p-sm-3 p-2 mb-lg-0 mb-mb-0 mb-xl-0 mb-sm-5 mb-4" data-aos="flip-up" data-aos-duration="1000">
+                        <div class="target-block text-white  p-lg-5 p-md-3 p-sm-3 p-2 mb-lg-0 mb-mb-0 mb-xl-0 mb-sm-5 mb-4"
+                            data-aos="flip-up" data-aos-duration="1000">
                             <div class="border-line"></div>
                             <i class="fa fa-eye fa-3x color-orange mb-3"></i>
                             <h4 class="fw-bold">Vision</h4>
-                            <p>Aliquip exea conse quat nul duis crib irure dolor in reprehenderit voluptate velit ese cillum dolore fugiat.</p>
-                            <a href="javascript:" class="btn text-white ps-0">Read More <i class="fa fa-angle-double-right ms-2"></i>
-                </a>
+                            <p>Aliquip exea conse quat nul duis crib irure dolor in reprehenderit voluptate velit ese
+                                cillum dolore fugiat.</p>
+                            <a href="javascript:" class="btn text-white ps-0">Read More <i
+                                    class="fa fa-angle-double-right ms-2"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="target-block text-white  p-lg-5 p-md-3 p-2 mb-lg-0 mb-mb-0 mb-xl-0" data-aos="flip-up" data-aos-duration="1000">
+                        <div class="target-block text-white  p-lg-5 p-md-3 p-2 mb-lg-0 mb-mb-0 mb-xl-0"
+                            data-aos="flip-up" data-aos-duration="1000">
                             <div class="border-line"></div>
                             <i class="fa fa-certificate fa-3x color-orange mb-3"></i>
                             <h4 class="fw-bold">Award</h4>
-                            <p>Aliquip exea conse quat nul duis crib irure dolor in reprehenderit voluptate velit ese cillum dolore fugiat.</p>
-                            <a href="javascript:" class="btn text-white ps-0">Read More <i class="fa fa-angle-double-right ms-2"></i>
-                </a>
+                            <p>Aliquip exea conse quat nul duis crib irure dolor in reprehenderit voluptate velit ese
+                                cillum dolore fugiat.</p>
+                            <a href="javascript:" class="btn text-white ps-0">Read More <i
+                                    class="fa fa-angle-double-right ms-2"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -249,47 +206,61 @@
                                 <span class="fa fa-mortar-board"></span>
                             </div>
                         </div>
-                        <p class="p-17">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        <p class="p-17">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type
                             specimen book.</p>
-                        <p class="p-17">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+                        <p class="p-17">It has survived not only five centuries, but also the leap into electronic
+                            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                            release of Letraset sheets containing Lorem Ipsum passages.</p>
                         <button type="button" class="btn theme-Red theme-btn mt-3 join-us">Join Us</button>
                     </div>
                     <div class="col-lg-6">
                         <div class="counter-box">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-6 mb-md-5">
-                                    <div class="counter aos-init aos-animate mb-5" data-aos="fade-up" data-aos-duration="550">
+                                    <div class="counter aos-init aos-animate mb-5" data-aos="fade-up"
+                                        data-aos-duration="550">
                                         <div class="border-line"></div>
                                         <div class="counter-img">
-                                            <img src="assets/images/icons/Training-Center.png" class="img-fluid" alt="Teacher">
+                                            <img src="assets/images/icons/Training-Center.png" class="img-fluid"
+                                                alt="Teacher">
                                         </div>
-                                        <h2 class="timer count-title count-number" data-to="300" data-speed="1500">300</h2>
+                                        <h2 class="timer count-title count-number" data-to="300" data-speed="1500">300
+                                        </h2>
                                         <h5 class="count-text mt-2">Teachers</h5>
                                     </div>
-                                    <div class="counter aos-init aos-animate" data-aos="fade-up" data-aos-duration="550">
+                                    <div class="counter aos-init aos-animate" data-aos="fade-up"
+                                        data-aos-duration="550">
                                         <div class="border-line"></div>
                                         <div class="counter-img">
                                             <img src="assets/images/icons/class.png" class="img-fluid" alt="Classroom">
                                         </div>
-                                        <h2 class="timer count-title count-number" data-to="1700" data-speed="1500">1,700</h2>
+                                        <h2 class="timer count-title count-number" data-to="1700" data-speed="1500">
+                                            1,700</h2>
                                         <h5 class="count-text mt-2">Classroom</h5>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 mt-lg-5 mt-lg-5 mt-md-5">
-                                    <div class="counter aos-init aos-animate" data-aos="fade-up" data-aos-duration="550">
+                                    <div class="counter aos-init aos-animate" data-aos="fade-up"
+                                        data-aos-duration="550">
                                         <div class="border-line"></div>
                                         <div class="counter-img">
                                             <img src="assets/images/icons/career-2.png" class="img-fluid" alt="Career">
                                         </div>
-                                        <h2 class="timer count-title count-number" data-to="11900" data-speed="1500">11,900</h2>
+                                        <h2 class="timer count-title count-number" data-to="11900" data-speed="1500">
+                                            11,900</h2>
                                         <h5 class="count-text mt-2">Career</h5>
                                     </div>
-                                    <div class="counter margin-bottom aos-init aos-animate margin-bottom" data-aos="fade-up" data-aos-duration="550">
+                                    <div class="counter margin-bottom aos-init aos-animate margin-bottom"
+                                        data-aos="fade-up" data-aos-duration="550">
                                         <div class="border-line"></div>
                                         <div class="counter-img">
-                                            <img src="assets/images/icons/activities-100.png" class="img-fluid" alt="Activities">
+                                            <img src="assets/images/icons/activities-100.png" class="img-fluid"
+                                                alt="Activities">
                                         </div>
-                                        <h2 class="timer count-title count-number" data-to="157" data-speed="1500">157</h2>
+                                        <h2 class="timer count-title count-number" data-to="157" data-speed="1500">157
+                                        </h2>
                                         <h5 class="count-text mt-2">Activities</h5>
                                     </div>
                                 </div>
@@ -339,23 +310,28 @@
                         <div class="slider-for mb-3" data-aos="fade-up" data-aos-duration="1000">
                             <div class="history-content p-5 text-center theme-Red">
                                 <h3>RahiTech In 2000</h3>
-                                <p>Find to reach fault with a man who chooses to enjoy a pleasure that has except to obtain some advantage from it? But who has any right annoying consequences. </p>
+                                <p>Find to reach fault with a man who chooses to enjoy a pleasure that has except to
+                                    obtain some advantage from it? But who has any right annoying consequences. </p>
                             </div>
                             <div class="history-content p-5 text-center theme-Red">
                                 <h3>Rahitech In 2005</h3>
-                                <p>Find to reach fault with a man who chooses to enjoy a pleasure that has except to obtain some advantage from it? But who has any right annoying consequences. </p>
+                                <p>Find to reach fault with a man who chooses to enjoy a pleasure that has except to
+                                    obtain some advantage from it? But who has any right annoying consequences. </p>
                             </div>
                             <div class="history-content p-5 text-center theme-Red">
                                 <h3>Rahitech In 2010</h3>
-                                <p>Find to reach fault with a man who chooses to enjoy a pleasure that has except to obtain some advantage from it? But who has any right annoying consequences. </p>
+                                <p>Find to reach fault with a man who chooses to enjoy a pleasure that has except to
+                                    obtain some advantage from it? But who has any right annoying consequences. </p>
                             </div>
                             <div class="history-content p-5 text-center theme-Red">
                                 <h3>Rahitech In 2015</h3>
-                                <p>Find to reach fault with a man who chooses to enjoy a pleasure that has except to obtain some advantage from it? But who has any right annoying consequences. </p>
+                                <p>Find to reach fault with a man who chooses to enjoy a pleasure that has except to
+                                    obtain some advantage from it? But who has any right annoying consequences. </p>
                             </div>
                             <div class="history-content p-5 text-center theme-Red">
                                 <h3>Rahitech In 2019</h3>
-                                <p>Find to reach fault with a man who chooses to enjoy a pleasure that has except to obtain some advantage from it? But who has any right annoying consequences. </p>
+                                <p>Find to reach fault with a man who chooses to enjoy a pleasure that has except to
+                                    obtain some advantage from it? But who has any right annoying consequences. </p>
                             </div>
                         </div>
                     </div>
@@ -383,7 +359,9 @@
                                     <p class="mb-0">Lorem ipsum...</p>
                                 </div>
                             </div>
-                            <p class="ps-3 pe-3 text-start">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                            <p class="ps-3 pe-3 text-start">There are many variations of passages of Lorem Ipsum
+                                available, but the majority have suffered alteration in some form, by injected humour,
+                                or randomised words which don't look even slightly believable.</p>
                         </div>
                     </div>
                     <div class="card  m-2">
@@ -395,7 +373,9 @@
                                     <p class="mb-0">Lorem ipsum...</p>
                                 </div>
                             </div>
-                            <p class="ps-3 pe-3 text-start">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                            <p class="ps-3 pe-3 text-start">There are many variations of passages of Lorem Ipsum
+                                available, but the majority have suffered alteration in some form, by injected humour,
+                                or randomised words which don't look even slightly believable.</p>
                         </div>
                     </div>
                     <div class="card  m-2 ">
@@ -407,7 +387,9 @@
                                     <p class="mb-0">Lorem ipsum...</p>
                                 </div>
                             </div>
-                            <p class="ps-3 pe-3 text-start">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                            <p class="ps-3 pe-3 text-start">There are many variations of passages of Lorem Ipsum
+                                available, but the majority have suffered alteration in some form, by injected humour,
+                                or randomised words which don't look even slightly believable.</p>
                         </div>
                     </div>
                     <div class="card m-2">
@@ -419,7 +401,9 @@
                                     <p class="mb-0">Lorem ipsum...</p>
                                 </div>
                             </div>
-                            <p class="ps-3 pe-3 text-start">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                            <p class="ps-3 pe-3 text-start">There are many variations of passages of Lorem Ipsum
+                                available, but the majority have suffered alteration in some form, by injected humour,
+                                or randomised words which don't look even slightly believable.</p>
                         </div>
                     </div>
                     <div class="card  m-2">
@@ -431,7 +415,9 @@
                                     <p class="mb-0">Lorem ipsum...</p>
                                 </div>
                             </div>
-                            <p class="ps-3 pe-3 text-start">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                            <p class="ps-3 pe-3 text-start">There are many variations of passages of Lorem Ipsum
+                                available, but the majority have suffered alteration in some form, by injected humour,
+                                or randomised words which don't look even slightly believable.</p>
                         </div>
                     </div>
                     <div class="card  m-2 ">
@@ -443,74 +429,21 @@
                                     <p class="mb-0">Lorem ipsum...</p>
                                 </div>
                             </div>
-                            <p class="ps-3 pe-3 text-start">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                            <p class="ps-3 pe-3 text-start">There are many variations of passages of Lorem Ipsum
+                                available, but the majority have suffered alteration in some form, by injected humour,
+                                or randomised words which don't look even slightly believable.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- end events -->
-         <!-- start footer -->
-        <footer class="theme-Black">
-            <div class="container">
-                <div class="footer-top border-bottom pt-5">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6" data-aos="fade-in" data-aos-duration="1050">
-                            <a href="index.html"><img src="assets/images/logo.png" style="width: 150px;" class="img-fluid mb-3" alt="Edusquad"></a>
-                            <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
-                            <ul class="social-icon">
-                                <li><a href="javascript:"><i class="fa fa-facebook-f"></i></a></li>
-                                <li><a href="javascript:"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="javascript:"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="javascript:"><i class="fa fa-skype"></i></a></li>
-                                <li><a href="javascript:"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-2 col-md-6" data-aos="fade-in" data-aos-duration="550">
-                            <h5 class="fw-bold mb-3">Quick Links</h5>
-                            <ul>
-                                <li><a href="index.html"><i class="fa fa-angle-double-right me-2"></i>Home</a></li>
-                                <li><a href="about.html"><i class="fa fa-angle-double-right me-2"></i>About Us</a></li>
-                                <li><a href="course.html"><i class="fa fa-angle-double-right me-2"></i>Student Corner</a></li>
-                                <li><a href="gallery.html"><i class="fa fa-angle-double-right me-2"></i>Gallery</a></li>
-                                <li><a href="contact.html"><i class="fa fa-angle-double-right me-2"></i>Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-6 mb-md-5 mb-4" data-aos="fade-in" data-aos-duration="1050">
-                            <h5 class="fw-bold mb-3">RahiTech Location</h5>
-                            <div class="row">
-                                <div class="container" >
-                            <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8194.870985815887!2d73.81868618966979!3d18.506302187891944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf95013c8af3%3A0xe8d8ce4fde820d9e!2sWaari%20Book%20Cafe!5e0!3m2!1sen!2sin!4v1752287300525!5m2!1sen!2sin"
-                            width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 ps-lg-5  mb-md-5" data-aos="fade-in" data-aos-duration="1050">
-                            <h5 class="fw-bold mb-3">Contact Us</h5>
-                            <ul class="address-icon">
-                                <li class="mb-3"><i class="fa fa-map-marker me-3 color-Red"></i>3rd Floor, Upendra1 09, Shankarao Joshi Rd, opp. Nisaraga Hotel, opposite Padale Palace, Nal Stop, Pandurang Colony, Erandwane, Pune, Maharashtra 411004</li>
-                                <li class="mb-3"><i class="fa fa-map-marker me-3 color-Red"></i>2nd And 3rd Floor, Above Waari Book Cafe, Choice Group, off Karve Road, Jhala Co-Op Housing Society, Kothrud, Pune, Maharashtra 411038</li>
-                                <li class="mb-3"><i class="fa fa-phone me-3 color-Red"></i>+91 9421776347</li>
-                                <li class="mb-3"><i class="fa fa-envelope color-Red me-3"></i>careers@rahitech.com</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom-footer py-3 d-flex justify-content-between">
-                    <p class="mb-0">All Rights Reserved by Rahitech.</p>
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item"><a href="javascript:">Terms of use</a></li>
-                        <li class="list-inline-item"><a href="javascript:">Privacy policy</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
+        <!-- start footer -->
+        <div id="footer-container"></div>
         <!-- end footer -->
         <a href="#" id="scroll">
-        <span></span>
-      </a>
+            <span></span>
+        </a>
     </div>
     <!-- ===============jQuery Frameworks============= -->
     <script src="assets/js/jquery.min.js"></script>

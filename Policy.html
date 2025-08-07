@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Edusquad - Education Template">
+    <!-- ========== Page Title ========== -->
+    <title>RahiTech</title>
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- ========== Google Fonts ========== -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap" rel="stylesheet">
+    <!-- ========== Start Stylesheet ========== -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        img {
+            image-orientation: flip;
+        }
+    </style>
+    <script>
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('navbar-container').innerHTML = html);
+
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('footer-container').innerHTML = html);
+    </script>
+</head>
+
+<body>
+    <!--start preloader-->
+    <div class="preloader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <!--end preloader-->
+    <div class="page-wrapper" id="page-wrapper">
+
+        <!-- start Navbar -->
+        <div id="navbar-container"></div>
+        <!-- end Navbar -->
+
+        <!-- Start Privacy And Policy-->
+        <section class="container-fluid bg-light py-5">
+            <div class="container shadow p-5 bg-white rounded-4">
+                <h2 class="mb-4 text-center fw-bold">Privacy Policy</h2>
+
+                <p><strong>Rahitech IT Solutions</strong> (collectively “We” or “Us”) has generated this privacy
+                    statement to display our firm commitment towards privacy.</p>
+
+                <h5 class="fw-semibold mt-4">Purpose of Our Privacy Statement</h5>
+                <p>This privacy policy applies solely to the information collected by this website and aims to notify
+                    you of the following:</p>
+                <ul>
+                    <li>What personally identifiable information is collected from you through this website and how it
+                        is used.</li>
+                    <li>With whom it may be shared.</li>
+                    <li>What choices are available to you regarding your data.</li>
+                    <li>What security procedures are in place to protect your data.</li>
+                    <li>How you can correct any inaccuracies.</li>
+                </ul>
+
+                <h5 class="fw-semibold mt-4">Information Collected and Its Uses</h5>
+                <p>To the extent permissible under applicable law, we collect information about you or any other party
+                    whose details you provide to us. This may happen when you complete forms, take surveys, post
+                    messages, interact on social media, or communicate offline (via telephone, SMS, etc.). We may also
+                    collect incomplete form data if you abandon any submission.</p>
+
+                <p><strong>Log File Information:</strong> Our servers automatically log certain data including IP
+                    address, browser type, pages visited, referring URLs, clicks, and interactions.</p>
+                <p><strong>Cookies:</strong> We use cookies to store data and improve your access experience on our
+                    website.</p>
+
+                <h5 class="fw-semibold mt-4">Your Security is Important to Us</h5>
+                <p>We apply appropriate technical and organizational measures to protect your personal information,
+                    including encryption where necessary. However, no data transmission over the internet is 100%
+                    secure, and we are not responsible for unauthorized access by third parties.</p>
+
+                <h5 class="fw-semibold mt-4">Our Marketing Strategies</h5>
+                <p><strong>Google AdWords:</strong> Tracks visitors and may show ads on other websites if you leave our
+                    site without completing certain actions.</p>
+                <p><strong>Facebook:</strong> Tracks site visits and may show remarketing ads on the Facebook platform.
+                </p>
+                <p>You can manage ad preferences in the "Ads Settings" section of your Google Account.</p>
+
+                <h5 class="fw-semibold mt-4">Third Parties and Shared Information</h5>
+                <p>We may partner with third parties to deliver specific services. We share only the necessary contact
+                    information for these services, and these parties are not allowed to use your information for any
+                    other purpose.</p>
+
+                <h5 class="fw-semibold mt-4">Changes to This Privacy Statement</h5>
+                <p>This policy may be updated from time to time. Please review it periodically for any changes.</p>
+
+                <h5 class="fw-semibold mt-4">Contact Us</h5>
+                <p>If you have any questions or believe we are not abiding by this policy, please contact us:</p>
+                <ul>
+                    <li>Email: <a href="mailto:careers@rahitech.com">careers@rahitech.com</a></li>
+                    <li>Phone: <a href="tel:+919421776347">9421776347</a></li>
+                </ul>
+            </div>
+        </section>
+        <!--End Privacy and Policy-->
+
+        <!-- start footer -->
+        <div id="footer-container"></div>
+        <!-- end footer -->
+
+        <a href="#" id="scroll">
+            <span></span>
+        </a>
+    </div>
+
+    <script>
+
+
+        function gateDate() {
+
+            today = new Date();
+
+            day = today.getDay();
+
+            daysForThursday = (4 - day + 7) % 7;
+
+            nextThursday = new Date(today);
+
+            nextThursday.setDate(today.getDate() + daysForThursday);
+
+            return nextThursday.toDateString();
+
+        }
+
+        for (let i = 0; i < 3; i++) {
+            document.getElementsByClassName("nextThursday").item(i).innerHTML = gateDate();
+
+        }
+
+        //   alert("Today is :- "+ new Date());
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector('.left-btn')?.addEventListener('click', function () {
+                console.log('clicked');
+            });
+            document.querySelector('.right-btn')?.addEventListener('click', function () {
+                console.log('contact clicked');
+            });
+        });
+        function GetCourse() {
+            let course = document.getElementById('FormCourses').value;
+
+            //  alert("Course is "+ course);
+
+            window.location.href = "CoursesDetails.html?course=" + encodeURIComponent(course);
+
+        }
+
+    </script>
+    <!-- ===============jQuery Frameworks============= -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/page/home/home.js"></script>
+    
+</body>
+
+</html>
