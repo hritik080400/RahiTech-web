@@ -35,90 +35,9 @@
     </div>
     <!--end preloader-->
     <div class="page-wrapper">
-        <!-- start top header -->
-        <header class="top-header py-2 bg-dark">
-    <div class="container">
-        <div class="row align-items-center">
-            <!-- Left side - Call to action buttons -->
-            <div class="col-xl-3 col-lg-4 col-md-12 text-start top-btn">
-                <a href="contact.html" class="btn theme-Red me-2">
-                    <i class="fa fa-calendar-check-o me-2"></i>Free Consultation
-                </a>
-                <a href="tel:+919876543210" class="btn theme-Red">
-                    <i class="fa fa-phone me-2"></i>Call Now
-                </a>
-            </div>
-            
-            <!-- Middle - Announcement icon -->
-            <div class="col-xl-2 col-lg-3 col-md-4 py-2 fw-bold f-15 announcement text-white">
-                <i class="fa fa-bullhorn me-3 color-Red"></i>
-                <span>Hot Offers</span>
-            </div>
-            
-            <!-- Right side - Marquee text -->
-            <div class="col-xl-7 col-lg-5 col-md-8">
-                <p class="marquee text-white mb-0">
-                    <span>
-                        🚀 Limited Time Offer: Get 15% off your first .NET project! 
-                        ⚡ Angular + .NET Core Specialists | 
-                        🔍 SQL Database Optimization Services | 
-                        💻 WinForms Modernization Packages Available
-                    </span>
-                </p>
-            </div>
-        </div>
-    </div>
-</header>
-        <!-- end top header -->
-        <!-- start main header -->
-        <header class="main-header" id="header">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                    <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/logo.png" style="width: 200px;" class="img-fluid" alt="Edusquad">
-                </a>
-                    <span class="navbar-toggler">
-                    <i class="fa fa-bars" onclick="openNav()"></i>
-                </span>
-                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="course.html">Course</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="gallery.html">Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="blog.html">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </header>
-        <!-- end main header -->
-        <!-- start side menu -->
-        <div class="sidenav" id="mySidenav">
-            <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>
-            <div class="sidenav-links pt-4">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="course.html">Course</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-        <!-- end side menu -->
+        <!-- start Navbar -->
+        <div id="navbar-container"></div>
+        <!-- end Navbar -->
         <!-- start inner-banner -->
         <section class="inner-banner">
             <h1 class="fw-bold text-center">Contact Us</h1>
@@ -142,22 +61,27 @@
                             <form>
                                 <div class="mb-3">
                                     <label for="exampleInputName">Name</label>
-                                    <input class="form-control" id="exampleInputName" placeholder="Enter Name" type="text">
+                                    <input class="form-control" id="exampleInputName" placeholder="Enter Name"
+                                        type="text">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1">Email Address</label>
-                                    <input class="form-control" id="exampleInputEmail1" placeholder="Enter Email" type="email">
-                                    <small class="form-text text-muted" id="emailHelp">We'll never share your email with anyone
-                                    else.
-                                </small>
+                                    <input class="form-control" id="exampleInputEmail1" placeholder="Enter Email"
+                                        type="email">
+                                    <small class="form-text text-muted" id="emailHelp">We'll never share your email with
+                                        anyone
+                                        else.
+                                    </small>
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputNumber">Phone Number</label>
-                                    <input class="form-control" id="exampleInputNumber" placeholder="Enter Number" type="email">
+                                    <input class="form-control" id="exampleInputNumber" placeholder="Enter Number"
+                                        type="email">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputMessage">Message</label>
-                                    <input class="form-control" id="exampleInputMessage" placeholder="Message" type="email">
+                                    <input class="form-control" id="exampleInputMessage" placeholder="Message"
+                                        type="email">
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" id="exampleCheck1" type="checkbox">
@@ -168,27 +92,35 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 ms-minus">
-                        <div class="media p-3 d-flex justify-content-between align-items-center theme-Black mb-3" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="media p-3 d-flex justify-content-between align-items-center theme-Black mb-3"
+                            data-aos="zoom-in" data-aos-duration="1000">
                             <div class="media-body text-start">
                                 <h6 class="color-Red fw-bold mb-1">Address</h6>
-                                <li>3rd Floor, Upendra1 09, Shankarao Joshi Rd, opp. Nisaraga Hotel, opposite Padale Palace, Nal Stop, Pandurang Colony, Erandwane, Pune, Maharashtra 411004</li>
-                                <li>2nd And 3rd Floor, Above Waari Book Cafe, Choice Group, off Karve Road, Jhala Co-Op Housing Society, Kothrud, Pune, Maharashtra 411038</li>
+                                <li>3rd Floor, Upendra1 09, Shankarao Joshi Rd, opp. Nisaraga Hotel, opposite Padale
+                                    Palace, Nal Stop, Pandurang Colony, Erandwane, Pune, Maharashtra 411004</li>
+                                <li>2nd And 3rd Floor, Above Waari Book Cafe, Choice Group, off Karve Road, Jhala Co-Op
+                                    Housing Society, Kothrud, Pune, Maharashtra 411038</li>
                             </div>
-                            <img class="img-fluid contact-icon" data-aos="zoom-in" data-aos-duration="1050" src="assets/images/icons/location.png" alt="Location">
+                            <img class="img-fluid contact-icon" data-aos="zoom-in" data-aos-duration="1050"
+                                src="assets/images/icons/location.png" alt="Location">
                         </div>
-                        <div class="media p-3 d-flex justify-content-between align-items-center theme-Black mb-3" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="media p-3 d-flex justify-content-between align-items-center theme-Black mb-3"
+                            data-aos="zoom-in" data-aos-duration="1000">
                             <div class="media-body text-start">
                                 <h6 class="color-Red fw-bold mb-1">Email</h6>
                                 <p class="mb-0">careers@rahitech.com</p>
                             </div>
-                            <img class="img-fluid contact-icon" data-aos="zoom-in" data-aos-duration="1500" src="assets/images/icons/mail.png" alt="Mail">
+                            <img class="img-fluid contact-icon" data-aos="zoom-in" data-aos-duration="1500"
+                                src="assets/images/icons/mail.png" alt="Mail">
                         </div>
-                        <div class="media p-3 d-flex justify-content-between align-items-center theme-Black" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="media p-3 d-flex justify-content-between align-items-center theme-Black"
+                            data-aos="zoom-in" data-aos-duration="1000">
                             <div class="media-body text-start">
                                 <h6 class="color-Red fw-bold mb-1">Contact Number</h6>
                                 <p class="mb-0">+91 9421776347</p>
                             </div>
-                            <img class="img-fluid contact-icon" data-aos="zoom-in" data-aos-duration="1050" src="assets/images/icons/call.png" alt="Call">
+                            <img class="img-fluid contact-icon" data-aos="zoom-in" data-aos-duration="1050"
+                                src="assets/images/icons/call.png" alt="Call">
                         </div>
                     </div>
                 </div>
@@ -200,74 +132,23 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 p-1">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33554.433612655754!2d73.82352239236967!3d18.495716443619724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf95013c8af3%3A0xe8d8ce4fde820d9e!2sWaari%20Book%20Cafe!5e0!3m2!1sen!2sin!4v1752134555337!5m2!1sen!2sin" 
-                            height="450" style="border:0;width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33554.433612655754!2d73.82352239236967!3d18.495716443619724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf95013c8af3%3A0xe8d8ce4fde820d9e!2sWaari%20Book%20Cafe!5e0!3m2!1sen!2sin!4v1752134555337!5m2!1sen!2sin"
+                            height="450" style="border:0;width: 100%;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="col-md-6 p-1">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31588.00176922533!2d73.81569123505626!3d18.50799998555271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf8c622a13d5%3A0x8ae0b09ce0c096ab!2sRahitech%20IT%20Solution!5e0!3m2!1sen!2sin!4v1752134780802!5m2!1sen!2sin" 
-                        height="450" style="border:0;width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31588.00176922533!2d73.81569123505626!3d18.50799998555271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf8c622a13d5%3A0x8ae0b09ce0c096ab!2sRahitech%20IT%20Solution!5e0!3m2!1sen!2sin!4v1752134780802!5m2!1sen!2sin"
+                            height="450" style="border:0;width: 100%;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
         </section>
         <!-- end map -->
         <!-- start footer -->
-        <footer class="theme-Black">
-            <div class="container">
-                <div class="footer-top border-bottom pt-5">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6" data-aos="fade-in" data-aos-duration="1050">
-                            <a href="index.html"><img src="assets/images/logo.png" style="height: 100px; background-color: whitesmoke;" class="img-fluid mb-3" alt="Edusquad"></a>
-                            <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
-                            <ul class="social-icon">
-                                <li><a href="javascript:"><i class="fa fa-facebook-f"></i></a></li>
-                                <li><a href="javascript:"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="javascript:"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="javascript:"><i class="fa fa-skype"></i></a></li>
-                                <li><a href="javascript:"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-2 col-md-6" data-aos="fade-in" data-aos-duration="550">
-                            <h5 class="fw-bold mb-3">Quick Links</h5>
-                            <ul>
-                                <li><a href="index.html"><i class="fa fa-angle-double-right me-2"></i>Home</a></li>
-                                <li><a href="about.html"><i class="fa fa-angle-double-right me-2"></i>About Us</a></li>
-                                <li><a href="course.html"><i class="fa fa-angle-double-right me-2"></i>Student Corner</a></li>
-                                <li><a href="gallery.html"><i class="fa fa-angle-double-right me-2"></i>Gallery</a></li>
-                                <li><a href="contact.html"><i class="fa fa-angle-double-right me-2"></i>Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-6 mb-md-5 mb-4" data-aos="fade-in" data-aos-duration="1050">
-                            <h5 class="fw-bold mb-3">RahiTech Location</h5>
-                            <div class="row">
-                                <div class="container" >
-                            <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8194.870985815887!2d73.81868618966979!3d18.506302187891944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf95013c8af3%3A0xe8d8ce4fde820d9e!2sWaari%20Book%20Cafe!5e0!3m2!1sen!2sin!4v1752287300525!5m2!1sen!2sin"
-                            width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 ps-lg-5  mb-md-5" data-aos="fade-in" data-aos-duration="1050">
-                            <h5 class="fw-bold mb-3">Contact Us</h5>
-                            <ul class="address-icon">
-                                <li class="mb-3"><i class="fa fa-map-marker me-3 color-Red"></i>3rd Floor, Upendra1 09, Shankarao Joshi Rd, opp. Nisaraga Hotel, opposite Padale Palace, Nal Stop, Pandurang Colony, Erandwane, Pune, Maharashtra 411004</li>
-                                <li class="mb-3"><i class="fa fa-map-marker me-3 color-Red"></i>2nd And 3rd Floor, Above Waari Book Cafe, Choice Group, off Karve Road, Jhala Co-Op Housing Society, Kothrud, Pune, Maharashtra 411038</li>
-                                <li class="mb-3"><i class="fa fa-phone me-3 color-Red"></i>+91 9421776347</li>
-                                <li class="mb-3"><i class="fa fa-envelope color-Red me-3"></i>careers@rahitech.com</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom-footer py-3 d-flex justify-content-between">
-                    <p class="mb-0">All Rights Reserved by Rahitech.</p>
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item"><a href="javascript:">Terms of use</a></li>
-                        <li class="list-inline-item"><a href="javascript:">Privacy policy</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
+        <div id="footer-container"></div>
         <!-- end footer -->
         <a href="#" id="scroll"><span></span></a>
     </div>
@@ -279,6 +160,15 @@
     <script src="assets/js/jquery.fancybox.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('navbar-container').innerHTML = html);
+
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('footer-container').innerHTML = html);
+    </script>
 </body>
 
 </html>
