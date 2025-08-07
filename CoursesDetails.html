@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap" rel="stylesheet">
 
 
-     <!-- ========== Start Stylesheet ========== -->
+    <!-- ========== Start Stylesheet ========== -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
@@ -70,61 +70,10 @@
     </div>
     <!--end preloader-->
     <div class="page-wrapper" id="page-wrapper">
-       
-        <!-- start main header -->
-        <header class="main-header" id="header">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/images/logo.png" style="width: 150px;" class="img-fluid" alt="Edusquad">
-                    </a>
-                    <span class="navbar-toggler">
-                        <i class="fa fa-bars" onclick="openNav()"></i>
-                    </span>
-                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="course.html">Course</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="gallery.html">Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="blog.html">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </header>
-        <!-- end main header -->
-        <!-- start side menu -->
-        <div class="sidenav" id="mySidenav">
-            <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>
-            <div class="sidenav-links pt-4">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="course.html">Course</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-        <!-- end side menu -->
-        <!-- start inner-banner -->
-        <section class="inner-banner">
-            <h1 class="fw-bold text-center CourseNames">Course Name</h1>
-        </section>
-        <!-- end inner-banner -->
+
+        <!-- start Navbar -->
+        <div id="navbar-container"></div>
+        <!-- end Navbar -->
 
 
         <!-- start counter -->
@@ -183,32 +132,33 @@
         <!-- end counter -->
 
 
-       
+
         <div class="container-fluid">
             <div class="row g-4" id="demos"></div>
         </div>
 
 
-       <!-- start Courses Overview -->
-<div class="container my-5 py-4 bg-light rounded-3 shadow-sm">
-  <div class="row justify-content-center text-center mb-4">
-    <div class="col-lg-10">
-      <h1 class="display-6 fw-bold text-danger mb-3">
-        Explore the <span class="text-dark CourseNames">[Course Name]</span> Course with ITView
-      </h1>
-      <p class="lead text-muted">
-        Upgrade your skills with our expertly curated curriculum. Hands-on projects, career guidance, and the latest tools to make you industry-ready.
-      </p>
-    </div>
-  </div>
+        <!-- start Courses Overview -->
+        <div class="container my-5 py-4 bg-light rounded-3 shadow-sm">
+            <div class="row justify-content-center text-center mb-4">
+                <div class="col-lg-10">
+                    <h1 class="display-6 fw-bold text-danger mb-3">
+                        Explore the <span class="text-dark CourseNames">[Course Name]</span> Course with ITView
+                    </h1>
+                    <p class="lead text-muted">
+                        Upgrade your skills with our expertly curated curriculum. Hands-on projects, career guidance,
+                        and the latest tools to make you industry-ready.
+                    </p>
+                </div>
+            </div>
 
-  <div class="row justify-content-center">
-    <div class="col-lg-10">
-      <div class="bg-white p-4 rounded-3 shadow-sm border-start border-4 border-danger">
-        <h5 class="mb-3 text-dark fs-2 fw-bold">
-          <i class="fa fa-book-open text-primary me-2"></i> What You’ll Learn
-        </h5>
-        <!-- <div id="CourseDetails" class="text-secondary small">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="bg-white p-4 rounded-3 shadow-sm border-start border-4 border-danger">
+                        <h5 class="mb-3 text-dark fs-2 fw-bold">
+                            <i class="fa fa-book-open text-primary me-2"></i> What You’ll Learn
+                        </h5>
+                        <!-- <div id="CourseDetails" class="text-secondary small">
            !-- Dynamic content will appear here --
           <ul class="mb-0">
             <li>Core Programming Skills</li>
@@ -218,12 +168,12 @@
             <li>Interview and Resume Preparation</li>
           </ul>
         </div> -->
-        <div class="container-fluid" id="TopicsData"></div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end Courses Overview -->
+                        <div class="container-fluid" id="TopicsData"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Courses Overview -->
 
 
 
@@ -267,7 +217,8 @@
                 <!-- Left Side: Image + Heading -->
                 <div class="col-md-6 text-center mb-4 mb-md-0">
                     <h2 class="fw-bold text-secondary mb-4">I'm Interested In This Program</h2>
-                    <img src="./assets/images/Courses-Intrest-removebg-preview.png" alt="Woman pointing" class="img-fluid" height="20px" />
+                    <img src="./assets/images/Courses-Intrest-removebg-preview.png" alt="Woman pointing"
+                        class="img-fluid" height="20px" />
                 </div>
 
                 <!-- Right Side -->
@@ -318,283 +269,218 @@
         <div class="container" id="TopicsData"></div>
 
 
-       <!-- start contact us -->
-    <section class="contact-us mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 contact-us-block">
-                    <div class="border-line"></div>
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12 py-5">
-                            <h3 class="text-center fw-bold">Student Review</h3>
-                            <div class="single-item">
-                                <div class="text-center py-4">
-                                    <img src="assets/images/1.png" class="img-fluid m-auto d-block" alt="Student">
-                                    <h5 class="mt-3 fw-bold">Habina Rehman</h5>
-                                    <h6>Suffered are many variation of passages lorem availle there on alterati of some
-                                        form by the injected for users.</h6>
-                                </div>
-                                <div class="text-center py-4">
-                                    <img src="assets/images/2.png" class="img-fluid m-auto d-block" alt="Student">
-                                    <h5 class="mt-3 fw-bold">John Leo</h5>
-                                    <h6>Suffered are many variation of passages lorem availle there on alterati of some
-                                        form by the injected for users.</h6>
-                                </div>
-                                <div class="text-center py-4">
-                                    <img src="assets/images/3.png" class="img-fluid m-auto d-block" alt="Student">
-                                    <h5 class="mt-3 fw-bold">Lisa Devis</h5>
-                                    <h6>Suffered are many variation of passages lorem availle there on alterati of some
-                                        form by the injected for users.</h6>
-                                </div>
-                                <button class="slick-prev slick-arrow" aria-label="Previous" type="button"> Previous
-                                </button>
-                                <button class="slick-next slick-arrow" aria-label="Next" type="button">Next </button>
-                            </div>
-                        </div>
-                        <div class="col-md-6 hidden-md">
-                            <div class="joinus-content theme-Red mx-5" data-aos="zoom-in" data-aos-duration="550">
-                                <p class="text-uppercase fw-bold mb-0">Join Us</p>
-                                <h2 class="fw-bold mb-3">Talk With Our Expert</h2>
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="exampleInputName">Name</label>
-                                        <input type="text" class="form-control" id="exampleInputName"
-                                            placeholder="Enter Your Name">
+        <!-- start contact us -->
+        <section class="contact-us mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 contact-us-block">
+                        <div class="border-line"></div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 py-5">
+                                <h3 class="text-center fw-bold">Student Review</h3>
+                                <div class="single-item">
+                                    <div class="text-center py-4">
+                                        <img src="assets/images/1.png" class="img-fluid m-auto d-block" alt="Student">
+                                        <h5 class="mt-3 fw-bold">Habina Rehman</h5>
+                                        <h6>Suffered are many variation of passages lorem availle there on alterati of
+                                            some
+                                            form by the injected for users.</h6>
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="exampleInputEmail1">Email address</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1"
-                                            placeholder="Enter Your Email">
+                                    <div class="text-center py-4">
+                                        <img src="assets/images/2.png" class="img-fluid m-auto d-block" alt="Student">
+                                        <h5 class="mt-3 fw-bold">John Leo</h5>
+                                        <h6>Suffered are many variation of passages lorem availle there on alterati of
+                                            some
+                                            form by the injected for users.</h6>
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlSelect1">Course</label>
-                                        <select class="form-control" id="exampleFormControlSelect1">
-                                            <option>Web Design</option>
-                                            <option>UX/UI Design</option>
-                                            <option>Business Management</option>
-                                            <option>Business Analysis</option>
-                                            <option>Web Development</option>
-                                        </select>
+                                    <div class="text-center py-4">
+                                        <img src="assets/images/3.png" class="img-fluid m-auto d-block" alt="Student">
+                                        <h5 class="mt-3 fw-bold">Lisa Devis</h5>
+                                        <h6>Suffered are many variation of passages lorem availle there on alterati of
+                                            some
+                                            form by the injected for users.</h6>
                                     </div>
-                                    <button type="submit" class="btn read-more text-white border-white">Let's Start To
-                                        Talk <i class="fa fa-long-arrow-alt-right"></i>
+                                    <button class="slick-prev slick-arrow" aria-label="Previous" type="button"> Previous
                                     </button>
-                                </form>
+                                    <button class="slick-next slick-arrow" aria-label="Next" type="button">Next
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-6 hidden-md">
+                                <div class="joinus-content theme-Red mx-5" data-aos="zoom-in" data-aos-duration="550">
+                                    <p class="text-uppercase fw-bold mb-0">Join Us</p>
+                                    <h2 class="fw-bold mb-3">Talk With Our Expert</h2>
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputName">Name</label>
+                                            <input type="text" class="form-control" id="exampleInputName"
+                                                placeholder="Enter Your Name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                placeholder="Enter Your Email">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlSelect1">Course</label>
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option>Web Design</option>
+                                                <option>UX/UI Design</option>
+                                                <option>Business Management</option>
+                                                <option>Business Analysis</option>
+                                                <option>Web Development</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="btn read-more text-white border-white">Let's Start
+                                            To
+                                            Talk <i class="fa fa-long-arrow-alt-right"></i>
+                                        </button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- end contact us -->
+        </section>
+        <!-- end contact us -->
 
-     <!-- start join us -->
-    <section class="pt-5 mb-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="joinus-content theme-Red mx-5 hidden-lg" data-aos="zoom-in" data-aos-duration="550">
-                        <p class="text-uppercase fw-bold mb-0">Join Us</p>
-                        <h2 class="fw-bold mb-3">Talk With Our Expert</h2>
-                        <form>
-                            <div class="mb-3">
-                                <label for="exampleInputName1">Name</label>
-                                <input type="text" class="form-control" id="exampleInputName1"
-                                    placeholder="Enter Your Name">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail2">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail2"
-                                    placeholder="Enter Your Email">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlSelect3">Course</label>
-                                <select class="form-control" id="exampleFormControlSelect3">
-                                    <option>Web Design</option>
-                                    <option>UX/UI Design</option>
-                                    <option>Business Management</option>
-                                    <option>Business Analysis</option>
-                                    <option>Web Development</option>
-                                </select>
-                            </div>
-                            <button type="submit" class="btn read-more text-white border-white">Let's Start To Talk <i
-                                    class="fa fa-long-arrow-alt-right"></i>
-                            </button>
-                        </form>
+        <!-- start join us -->
+        <section class="pt-5 mb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="joinus-content theme-Red mx-5 hidden-lg" data-aos="zoom-in" data-aos-duration="550">
+                            <p class="text-uppercase fw-bold mb-0">Join Us</p>
+                            <h2 class="fw-bold mb-3">Talk With Our Expert</h2>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputName1">Name</label>
+                                    <input type="text" class="form-control" id="exampleInputName1"
+                                        placeholder="Enter Your Name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail2">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail2"
+                                        placeholder="Enter Your Email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlSelect3">Course</label>
+                                    <select class="form-control" id="exampleFormControlSelect3">
+                                        <option>Web Design</option>
+                                        <option>UX/UI Design</option>
+                                        <option>Business Management</option>
+                                        <option>Business Analysis</option>
+                                        <option>Web Development</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn read-more text-white border-white">Let's Start To Talk
+                                    <i class="fa fa-long-arrow-alt-right"></i>
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- end join us -->
+        </section>
+        <!-- end join us -->
 
 
-       
+
 
 
         <!-- start footer -->
-        <footer class="theme-Black">
-            <div class="container">
-                <div class="footer-top border-bottom pt-5">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6" data-aos="fade-in" data-aos-duration="1050">
-                            <a href="index.html"><img src="assets/images/logo.png" style="width: 150px;"
-                                    class="img-fluid mb-3" alt="Edusquad"></a>
-                            <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
-                                literature from 45 BC.</p>
-                            <ul class="social-icon">
-                                <li><a href="javascript:"><i class="fa fa-facebook-f"></i></a></li>
-                                <li><a href="javascript:"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="javascript:"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="javascript:"><i class="fa fa-skype"></i></a></li>
-                                <li><a href="javascript:"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-2 col-md-6" data-aos="fade-in" data-aos-duration="550">
-                            <h5 class="fw-bold mb-3">Quick Links</h5>
-                            <ul>
-                                <li><a href="index.html"><i class="fa fa-angle-double-right me-2"></i>Home</a></li>
-                                <li><a href="about.html"><i class="fa fa-angle-double-right me-2"></i>About Us</a>
-                                </li>
-                                <li><a href="course.html"><i class="fa fa-angle-double-right me-2"></i>Student
-                                        Corner</a></li>
-                                <li><a href="gallery.html"><i class="fa fa-angle-double-right me-2"></i>Gallery</a>
-                                </li>
-                                <li><a href="contact.html"><i class="fa fa-angle-double-right me-2"></i>Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-6 mb-md-5 mb-4" data-aos="fade-in" data-aos-duration="1050">
-                            <h5 class="fw-bold mb-3">RahiTech Location</h5>
-                            <div class="row">
-                                <div class="container">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8194.870985815887!2d73.81868618966979!3d18.506302187891944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf95013c8af3%3A0xe8d8ce4fde820d9e!2sWaari%20Book%20Cafe!5e0!3m2!1sen!2sin!4v1752287300525!5m2!1sen!2sin"
-                                        width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 ps-lg-5  mb-md-5" data-aos="fade-in" data-aos-duration="1050">
-                            <h5 class="fw-bold mb-3">Contact Us</h5>
-                            <ul class="address-icon">
-                                <li class="mb-3"><i class="fa fa-map-marker me-3 color-Red"></i>3rd Floor, Upendra1
-                                    09,
-                                    Shankarao Joshi Rd, opp. Nisaraga Hotel, opposite Padale Palace, Nal Stop,
-                                    Pandurang
-                                    Colony, Erandwane, Pune, Maharashtra 411004</li>
-                                <li class="mb-3"><i class="fa fa-map-marker me-3 color-Red"></i>2nd And 3rd Floor,
-                                    Above
-                                    Waari Book Cafe, Choice Group, off Karve Road, Jhala Co-Op Housing Society,
-                                    Kothrud,
-                                    Pune, Maharashtra 411038</li>
-                                <li class="mb-3"><i class="fa fa-phone me-3 color-Red"></i>+91 9421776347</li>
-                                <li class="mb-3"><i class="fa fa-envelope color-Red me-3"></i>careers@rahitech.com
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom-footer py-3 d-flex justify-content-between">
-                    <p class="mb-0">All Rights Reserved by Rahitech.</p>
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item"><a href="javascript:">Terms of use</a></li>
-                        <li class="list-inline-item"><a href="javascript:">Privacy policy</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
+        <div id="footer-container"></div>
         <!-- end footer -->
 
 
-         <a href="#" id="scroll">
+        <a href="#" id="scroll">
             <span></span>
         </a>
 
     </div>
 
 
-        <script>
+    <script>
 
-            fetch('https://picsum.photos/v2/list?page=1&limit=10')  // Replace with ERP Img API
-                .then(res => res.json())
-                .then(data => {
-                    const imgs = document.querySelectorAll('.dynamic-img');
-                    imgs.forEach((img, i) => {
-                        if (data[i]) {
-                            img.src = data[i].download_url;
-                        }
-                    });
-                })
-                .catch(err => console.error('Image API error:', err));
-        </script>
-
-        <script>
-            const params = new URLSearchParams(window.location.search);
-            const coursekey = params.get('course');
-
-            fetch('db.json')
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
+        fetch('https://picsum.photos/v2/list?page=1&limit=10')  // Replace with ERP Img API
+            .then(res => res.json())
+            .then(data => {
+                const imgs = document.querySelectorAll('.dynamic-img');
+                imgs.forEach((img, i) => {
+                    if (data[i]) {
+                        img.src = data[i].download_url;
                     }
-                    return response.json();
-                })
-                .then(data => {
-                    const container = document.getElementById("TopicsData");
-                    var details = data.AllCourseDetails[coursekey];
-                    var CourseIncludes = details.CourseIncludes;
-                    let CourseDetails = '';
-                    let Prerequisites = '';
-                    let TopicsData = '';
+                });
+            })
+            .catch(err => console.error('Image API error:', err));
+    </script>
 
-                    details.CourseDetails.forEach(topic => {
-                        console.log(topic);
-                        const row = document.createElement("div");
-                        row.className = "row mb-4";
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const coursekey = params.get('course');
 
-                        // Heading
-                        const headingDiv = document.createElement("div");
-                        headingDiv.className = "col-12 fw-bold fs-5 mb-2";
-                        headingDiv.textContent = topic.Heading;
-                        row.appendChild(headingDiv);
+        fetch('db.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                const container = document.getElementById("TopicsData");
+                var details = data.AllCourseDetails[coursekey];
+                var CourseIncludes = details.CourseIncludes;
+                let CourseDetails = '';
+                let Prerequisites = '';
+                let TopicsData = '';
 
-                        // Subpoints
-                        topic.SubPoints.forEach(point => {
-                            const subPointDiv = document.createElement("div");
-                            subPointDiv.className = "col-md-12 col-lg-6 text-secondary";
-                            subPointDiv.textContent = "⪢ " + point;
-                            row.appendChild(subPointDiv);
-                        });
+                details.CourseDetails.forEach(topic => {
+                    console.log(topic);
+                    const row = document.createElement("div");
+                    row.className = "row mb-4";
 
-                        container.appendChild(row);
+                    // Heading
+                    const headingDiv = document.createElement("div");
+                    headingDiv.className = "col-12 fw-bold fs-5 mb-2";
+                    headingDiv.textContent = topic.Heading;
+                    row.appendChild(headingDiv);
+
+                    // Subpoints
+                    topic.SubPoints.forEach(point => {
+                        const subPointDiv = document.createElement("div");
+                        subPointDiv.className = "col-md-12 col-lg-6 text-secondary";
+                        subPointDiv.textContent = "⪢ " + point;
+                        row.appendChild(subPointDiv);
                     });
 
-                    // Insert content into CourseIncludeshtml
-                    const CourseIncludeshtml  = document.getElementById("CourseIncludes");
-                    const durationP = document.createElement("p");
-                    const strongDuration = document.createElement("strong");
-                    strongDuration.textContent = "Duration : ";
-                    durationP.appendChild(strongDuration);
-                    durationP.append(` ${CourseIncludes.Duration}`);
-                    const prerequisitesP = document.createElement("p");
-                    const strongPre = document.createElement("strong");
-                    strongPre.textContent = "Prerequisites : ";
-                    prerequisitesP.appendChild(strongPre);
-                    const ul = document.createElement("ul");
-                    CourseIncludes.Prerequisites.forEach(e => {
-                        const li = document.createElement("li");
-                        li.textContent = e.P;
-                        ul.appendChild(li);
-                    });
-                    CourseIncludeshtml.appendChild(durationP);
-                    CourseIncludeshtml.appendChild(prerequisitesP);
-                    CourseIncludeshtml.appendChild(ul);
+                    container.appendChild(row);
+                });
 
-                    const CourseTopics = document.getElementsByClassName("CourseTopics");
-                    Array.from(CourseTopics).forEach(demos => {
-                        CourseIncludes.Topics.forEach(data => {
+                // Insert content into CourseIncludeshtml
+                const CourseIncludeshtml = document.getElementById("CourseIncludes");
+                const durationP = document.createElement("p");
+                const strongDuration = document.createElement("strong");
+                strongDuration.textContent = "Duration : ";
+                durationP.appendChild(strongDuration);
+                durationP.append(` ${CourseIncludes.Duration}`);
+                const prerequisitesP = document.createElement("p");
+                const strongPre = document.createElement("strong");
+                strongPre.textContent = "Prerequisites : ";
+                prerequisitesP.appendChild(strongPre);
+                const ul = document.createElement("ul");
+                CourseIncludes.Prerequisites.forEach(e => {
+                    const li = document.createElement("li");
+                    li.textContent = e.P;
+                    ul.appendChild(li);
+                });
+                CourseIncludeshtml.appendChild(durationP);
+                CourseIncludeshtml.appendChild(prerequisitesP);
+                CourseIncludeshtml.appendChild(ul);
+
+                const CourseTopics = document.getElementsByClassName("CourseTopics");
+                Array.from(CourseTopics).forEach(demos => {
+                    CourseIncludes.Topics.forEach(data => {
                         let div1 = document.createElement("div");
                         div1.className = "col-6 col-sm-4 col-md-3 col-lg-2 text-center";
                         let div2 = document.createElement("div");
@@ -607,29 +493,37 @@
                         div1.appendChild(div3);
                         demos.appendChild(div1);
                     })
-                    })
-
-                    for (let index = 0; index < 2; index++) {
-                        document.getElementsByClassName('CourseNames').item(index).innerText = details.CourseName;
-
-                        console.log(details.CourseName);
-                    }
                 })
-                .catch(error => {
-                    console.error('Error loading JSON:', error);
-                });
-        </script>
+
+                for (let index = 0; index < 2; index++) {
+                    document.getElementsByClassName('CourseNames').item(index).innerText = details.CourseName;
+
+                    console.log(details.CourseName);
+                }
+            })
+            .catch(error => {
+                console.error('Error loading JSON:', error);
+            });
+
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('navbar-container').innerHTML = html);
+
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('footer-container').innerHTML = html);
+    </script>
 
 
-<!-- ===============jQuery Frameworks============= -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/slick.min.js"></script>
-<script src="assets/js/jquery.fancybox.min.js"></script>
-<script src="assets/js/aos.js"></script>
-<script src="assets/js/script.js"></script>
-<script src="assets/js/page/home/home.js"></script>
+    <!-- ===============jQuery Frameworks============= -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/page/home/home.js"></script>
 
 </body>
 
