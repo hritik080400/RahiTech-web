@@ -349,8 +349,8 @@
                         <span class="fa fa-mortar-board"></span>
                     </div>
                 </div>
-                <div class="center">
-                    <div class="card m-2">
+                <div class="center" id="Testimonials">
+                    <!-- <div class="card m-2">
                         <div class="client-block p-3" data-aos="zoom-in" data-aos-duration="1000">
                             <div class="media p-3 align-items-center">
                                 <img src="assets/images/1.png" alt="Rony Devis" class="me-3 rounded-circle">
@@ -433,7 +433,7 @@
                                 available, but the majority have suffered alteration in some form, by injected humour,
                                 or randomised words which don't look even slightly believable.</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -445,6 +445,43 @@
             <span></span>
         </a>
     </div>
+
+    <script>
+        fetch('db.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network Response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                const Testimonials = data.Testimonials;
+                console.log(typeof(Testimonials))
+                console.log(Testimonials)
+                var Info = '';
+                
+                Testimonials.forEach(e => {
+                    Info += `<div class="card m-2">
+                    			<div class="client-block p-3" data-aos="zoom-in" data-aos-duration="1000">
+                                    <div class="media p-3 align-items-center">
+                                        <img src="${e.Image}" alt="${e.Name}" class="me-3 rounded-circle">
+                                        <div class="media-body text-start">
+                                            <h6 class="color-orange fw-bold mb-0">${e.Name}</h6>
+                                            <p class="mb-0">${e.Title}</p>
+                                        </div>
+                                    </div>
+                                    <p class="ps-3 pe-3 text-start">${e.Text}</p>
+                                </div>
+		                    </div>
+                    `;
+                    document.getElementById('Testimonials').innerHTML = Info;
+                })
+            })
+            .catch(error => {
+                console.error('Error Loading JSON:', error);
+            })
+    </script>
+    
     <!-- ===============jQuery Frameworks============= -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>

@@ -293,8 +293,8 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-12 py-5">
                                 <h3 class="text-center fw-bold">Student Review</h3>
-                                <div class="single-item">
-                                    <div class="text-center py-4">
+                                <div class="single-item" id="ShortTestimonials">
+                                    <!-- <div class="text-center py-4">
                                         <img src="assets/images/1.png" class="img-fluid m-auto d-block" alt="Student">
                                         <h5 class="mt-3 fw-bold">Habina Rehman</h5>
                                         <h6>Suffered are many variation of passages lorem availle there on alterati of
@@ -314,7 +314,7 @@
                                         <h6>Suffered are many variation of passages lorem availle there on alterati of
                                             some
                                             form by the injected for users.</h6>
-                                    </div>
+                                    </div> -->
                                     <button class="slick-prev slick-arrow" aria-label="Previous" type="button"> Previous
                                     </button>
                                     <button class="slick-next slick-arrow" aria-label="Next" type="button">Next
@@ -522,6 +522,33 @@
 
     </script>
 
+    <script>
+        fetch('db.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network Response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                const Testimonials = data.Testimonials;
+                var Info = '';
+                
+                Testimonials.forEach(e => {
+                    Info += `
+                        <div class="text-center py-4">
+                            <img src="${e.Image}" class="img-fluid m-auto Testimonial-images d-block" alt="${e.Name}">
+                            <h5 class="mt-3 fw-bold">${e.Name}</h5>
+                            <h6>${e.Text}</h6>
+                        </div>
+                    `;
+                    document.getElementById('ShortTestimonials').innerHTML = Info;
+                })
+            })
+            .catch(error => {
+                console.error('Error Loading JSON:', error);
+            })
+    </script>
 
     <!-- ===============jQuery Frameworks============= -->
     <script src="assets/js/jquery.min.js"></script>
