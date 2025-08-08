@@ -109,7 +109,7 @@
                             </div>
                             <div class="img_2 d-flex" data-aos="zoom-in" data-aos-duration="1000">
                                 <h5 class="mb-0 text-white">Our Story</h5>
-                                <a href="./assets/images/Rahitech-Video-1.mp4" data-fancybox="gallery"
+                                <a href="./assets/images/Rahitech-Video-2.mp4" data-fancybox="gallery"
                                     class="video-btn text-white">
                                     <i class="fa fa-play-circle fa-3x"></i>
                                 </a>
@@ -226,9 +226,9 @@
                                             <img src="assets/images/icons/Training-Center.png" class="img-fluid"
                                                 alt="Teacher">
                                         </div>
-                                        <h2 class="timer count-title count-number" data-to="300" data-speed="1500">300
+                                        <h2 class="timer count-title count-number" data-to="10" data-speed="1500">10
                                         </h2>
-                                        <h5 class="count-text mt-2">Teachers</h5>
+                                        <h5 class="count-text mt-2">Trainers</h5>
                                     </div>
                                     <div class="counter aos-init aos-animate" data-aos="fade-up"
                                         data-aos-duration="550">
@@ -236,9 +236,9 @@
                                         <div class="counter-img">
                                             <img src="assets/images/icons/class.png" class="img-fluid" alt="Classroom">
                                         </div>
-                                        <h2 class="timer count-title count-number" data-to="1700" data-speed="1500">
-                                            1,700</h2>
-                                        <h5 class="count-text mt-2">Classroom</h5>
+                                        <h2 class="timer count-title count-number" data-to="12" data-speed="1500">
+                                            12</h2>
+                                        <h5 class="count-text mt-2">Labs</h5>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 mt-lg-5 mt-lg-5 mt-md-5">
@@ -349,8 +349,8 @@
                         <span class="fa fa-mortar-board"></span>
                     </div>
                 </div>
-                <div class="center">
-                    <div class="card m-2">
+                <div class="center" id="Testimonials">
+                    <!-- <div class="card m-2">
                         <div class="client-block p-3" data-aos="zoom-in" data-aos-duration="1000">
                             <div class="media p-3 align-items-center">
                                 <img src="assets/images/1.png" alt="Rony Devis" class="me-3 rounded-circle">
@@ -433,7 +433,7 @@
                                 available, but the majority have suffered alteration in some form, by injected humour,
                                 or randomised words which don't look even slightly believable.</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -445,6 +445,43 @@
             <span></span>
         </a>
     </div>
+
+    <script>
+        fetch('db.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network Response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                const Testimonials = data.Testimonials;
+                console.log(typeof(Testimonials))
+                console.log(Testimonials)
+                var Info = '';
+                
+                Testimonials.forEach(e => {
+                    Info += `<div class="card m-2">
+                    			<div class="client-block p-3" data-aos="zoom-in" data-aos-duration="1000">
+                                    <div class="media p-3 align-items-center">
+                                        <img src="${e.Image}" alt="${e.Name}" class="me-3 rounded-circle">
+                                        <div class="media-body text-start">
+                                            <h6 class="color-orange fw-bold mb-0">${e.Name}</h6>
+                                            <p class="mb-0">${e.Title}</p>
+                                        </div>
+                                    </div>
+                                    <p class="ps-3 pe-3 text-start">${e.Text}</p>
+                                </div>
+		                    </div>
+                    `;
+                    document.getElementById('Testimonials').innerHTML = Info;
+                })
+            })
+            .catch(error => {
+                console.error('Error Loading JSON:', error);
+            })
+    </script>
+    
     <!-- ===============jQuery Frameworks============= -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>

@@ -894,7 +894,7 @@ a.dropdown-item:hover {
 }
 
 .video-area {
-    background: url("../images/video-bg.jpg");
+    background: url("../images/bg-faq-2.jpg");
     background-size: cover;
     padding: 250px 0;
     height: 100%;
@@ -1155,7 +1155,7 @@ footer ul li a:hover {
 
 .inner-banner {
     padding: 100px 0;
-    background: url("../images/inner-bg3.jpg");
+    background: url("../images/bg-courses.jpg");
     background-position: top;
     background-size: cover;
     position: relative;
@@ -2258,4 +2258,18 @@ html{
   
 ::-webkit-scrollbar-thumb:hover {
     background: red; 
+}
+
+.single-item .Testimonial-images{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+}
+
+#Testimonials .card {
+    height: 450px;
+    padding-bottom: 40px;
+    .client-block {
+        height: 100%;
+    }
 }
