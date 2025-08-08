@@ -2221,5 +2221,49 @@
         }
       ]
     }
-  }
+  },
+  "Testimonials":[
+    {
+        "Name":"Hritik Bhoite",
+        "Image":"assets/images/Hritik_Bhoite.png",
+        "Title":"Lorem ipsum...",
+        "Date":"01-12-2025",
+        "Text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+    },
+    {
+        "Name":"Pranav Mane",
+        "Image":"assets/images/Pranav_Mane.png",
+        "Title":"Lorem ipsum...",
+        "Date":"01-12-2025",
+        "Text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+    },
+    {
+        "Name":"Akash Gode",
+        "Image":"assets/images/Akash_Gode.png",
+        "Title":"Lorem ipsum...",
+        "Date":"01-12-2025",
+        "Text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+    },
+    {
+        "Name":"Hritik Bhoite",
+        "Image":"assets/images/Hritik_Bhoite.png",
+        "Title":"Lorem ipsum...",
+        "Date":"01-12-2025",
+        "Text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+    },
+    {
+        "Name":"Pranav Mane",
+        "Image":"assets/images/Pranav_Mane.png",
+        "Title":"Lorem ipsum...",
+        "Date":"01-12-2025",
+        "Text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+    },
+    {
+        "Name":"Akash Gode",
+        "Image":"assets/images/Akash_Gode.png",
+        "Title":"Lorem ipsum...",
+        "Date":"01-12-2025",
+        "Text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+    }
+  ]
 }

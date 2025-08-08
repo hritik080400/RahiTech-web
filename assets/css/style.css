@@ -2259,3 +2259,17 @@ html{
 ::-webkit-scrollbar-thumb:hover {
     background: red; 
 }
+
+.single-item .Testimonial-images{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+}
+
+#Testimonials .card {
+    height: 450px;
+    padding-bottom: 40px;
+    .client-block {
+        height: 100%;
+    }
+}
