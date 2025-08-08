@@ -894,7 +894,7 @@ a.dropdown-item:hover {
 }
 
 .video-area {
-    background: url("../images/inner-bg2.jpg");
+    background: url("../images/bg-faq-2.jpg");
     background-size: cover;
     padding: 250px 0;
     height: 100%;
@@ -1155,7 +1155,7 @@ footer ul li a:hover {
 
 .inner-banner {
     padding: 100px 0;
-    background: url("../images/inner-bg3.jpg");
+    background: url("../images/bg-courses.jpg");
     background-position: top;
     background-size: cover;
     position: relative;
