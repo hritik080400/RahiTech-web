@@ -5,7 +5,7 @@
     <!-- ========== Meta Tags ========== -->
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="Edusquad - Education Template" name="description">
+    <meta content="RahiTech It Solutions" name="description">
     <!-- ========== Page Title ========== -->
     <title>RahiTech</title>
     <!-- ========== Favicon Icon ========== -->
@@ -30,6 +30,31 @@
         fetch('footer.html')
             .then(res => res.text())
             .then(html => document.getElementById('footer-container').innerHTML = html);
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const checkNavbarLoaded = setInterval(() => {
+                const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+                if (navLinks.length > 0) {
+                    clearInterval(checkNavbarLoaded);
+
+                    const currentPage = window.location.pathname.split("/").pop();
+                    navLinks.forEach(link => {
+                        const href = link.getAttribute("href");
+                        if (href === currentPage) {
+                            link.classList.add("active-nav");
+                        }
+                    });
+
+                    const sideLinks = document.querySelectorAll(".sidenav-links a");
+                    sideLinks.forEach(link => {
+                        const href = link.getAttribute("href");
+                        if (href === currentPage) {
+                            link.classList.add("active-side");
+                        }
+                    });
+                }
+            }, 50);
+        });
     </script>
 </head>
 
@@ -105,7 +130,7 @@
                             data-aos="zoom-in" data-aos-duration="1000">
                             <div class="media-body text-start">
                                 <h6 class="color-Red fw-bold mb-1">Address</h6>
-                                <li>Office No. 9, 3rd Floor, 'Upendra C housing Society', Opp Nisarg Hotel, Erandavana, 
+                                <li>Office No. 9, 3rd Floor, 'Upendra C housing Society', Opp Nisarg Hotel, Erandavana,
                                     Road: Nal Stop, Karve Road, Pune, Maharashtra 411004</li>
                                 <li>3rd Floor, Above Waari Book Cafe, Choice Group, off Karve Road, Jhala Co-Op
                                     Housing Society, Kothrud, Pune, Maharashtra 411038</li>
