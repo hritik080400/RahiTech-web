@@ -400,6 +400,32 @@ nav {
     background-position: 0%;
 }
 
+.active-nav {
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: red !important;
+    color: #ed3237 !important;
+    font-weight: bold;
+}
+
+.active-nav:hover {
+    -webkit-text-fill-color: #3681b5 !important;
+    color: #3681b5 !important;
+}
+
+.active-side {
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: #fff !important;
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.active-side:hover {
+    -webkit-text-fill-color: #3681b5 !important;
+    color: #3681b5 !important;
+}
+
 .dropdown-toggle::after {
     color: #0c0b39;
 }
