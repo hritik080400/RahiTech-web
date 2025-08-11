@@ -62,6 +62,34 @@
             }, 50);
         });
     </script>
+
+    <script>
+        fetch('db.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network Response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                const Testimonials = data.Testimonials;
+                var Info = '';
+
+                Testimonials.forEach(e => {
+                    Info += `
+                        <div class="text-center py-4">
+                            <img src="${e.Image}" class="img-fluid m-auto Testimonial-images d-block" alt="${e.Name}">
+                            <h5 class="mt-3 fw-bold">${e.Name}</h5>
+                            <h6>${e.Text}</h6>
+                        </div>
+                    `;
+                    document.getElementById('ShortTestimonials').innerHTML = Info;
+                })
+            })
+            .catch(error => {
+                console.error('Error Loading JSON:', error);
+            })
+    </script>
 </head>
 
 <body>
@@ -884,34 +912,6 @@
                     console.error('Error Loading JSON:', error);
                 });
         }
-    </script>
-
-    <script>
-        fetch('db.json')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network Response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => {
-                const Testimonials = data.Testimonials;
-                var Info = '';
-
-                Testimonials.forEach(e => {
-                    Info += `
-                        <div class="text-center py-4">
-                            <img src="${e.Image}" class="img-fluid m-auto Testimonial-images d-block" alt="${e.Name}">
-                            <h5 class="mt-3 fw-bold">${e.Name}</h5>
-                            <h6>${e.Text}</h6>
-                        </div>
-                    `;
-                    document.getElementById('ShortTestimonials').innerHTML = Info;
-                })
-            })
-            .catch(error => {
-                console.error('Error Loading JSON:', error);
-            })
     </script>
 
     <!-- ===============jQuery Frameworks============= -->
