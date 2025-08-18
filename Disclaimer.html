@@ -5,7 +5,7 @@
     <!-- ========== Meta Tags ========== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Edusquad - Education Template">
+    <meta name="description" content="RahiTech It Solutions">
     <!-- ========== Page Title ========== -->
     <title>RahiTech</title>
     <!-- ========== Favicon Icon ========== -->
@@ -36,6 +36,31 @@
         fetch('footer.html')
             .then(res => res.text())
             .then(html => document.getElementById('footer-container').innerHTML = html);
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const checkNavbarLoaded = setInterval(() => {
+                const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+                if (navLinks.length > 0) {
+                    clearInterval(checkNavbarLoaded);
+
+                    const currentPage = window.location.pathname.split("/").pop();
+                    navLinks.forEach(link => {
+                        const href = link.getAttribute("href");
+                        if (href === currentPage) {
+                            link.classList.add("active-nav");
+                        }
+                    });
+
+                    const sideLinks = document.querySelectorAll(".sidenav-links a");
+                    sideLinks.forEach(link => {
+                        const href = link.getAttribute("href");
+                        if (href === currentPage) {
+                            link.classList.add("active-side");
+                        }
+                    });
+                }
+            }, 50);
+        });
     </script>
 </head>
 
