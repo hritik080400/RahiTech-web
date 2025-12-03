@@ -699,24 +699,26 @@ a.dropdown-item:hover {
 
 .left-btn:after {
     position: absolute;
-    content: '';
+    /* content: ''; */
     background: #ed3237;
+    cursor: pointer;
     width: 40px;
     height: 100%;
     top: 0;
     left: -17px;
-    z-index: -1;
+    z-index: 10;
 }
 
 .right-btn:after {
     position: absolute;
-    content: '';
+    /* content: ''; */
     background: #ed3237;
+    cursor: pointer;
     width: 40px;
     height: 100%;
     top: 0;
     right: -17px;
-    z-index: -1;
+    z-index: 10
 }
 
 /*6. Service*/
