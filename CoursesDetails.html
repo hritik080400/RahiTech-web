@@ -178,6 +178,35 @@
         </div>
 
 
+        <!-- Course Outline Section -->
+        <div class="container my-5">
+            <div class="row">
+                <!-- Left Label -->
+                <div class="col-lg-1 course-outline-box d-flex align-items-center justify-content-center">
+                    <div class="text-center text-secondary fw-semibold border-3 border-danger p-3 m-0">
+                        Courses<br />Outline
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="col-lg-11 ps-lg-5">
+                    <div class="mb-3">
+                        <div id="CourseIncludes"></div>
+                    </div>
+
+                    <div class="mb-3">
+                        <strong>Topics:</strong>
+                    </div>
+
+                    <div class="row g-4 CourseTopics">
+                        <!-- Course Cards -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- start Course Outline details-->
+
         <!-- start Courses Overview -->
         <div class="container my-5 py-4 bg-light rounded-3 shadow-sm">
             <div class="row justify-content-center text-center mb-4">
@@ -215,50 +244,14 @@
         </div>
         <!-- end Courses Overview -->
 
-
-
-
-
-
-
-        <!-- Course Outline Section -->
-        <div class="container my-5">
-            <div class="row">
-                <!-- Left Label -->
-                <div class="col-lg-1 course-outline-box d-flex align-items-center justify-content-center">
-                    <div class="text-center text-secondary fw-semibold border-3 border-danger p-3 m-0">
-                        Courses<br />Outline
-                    </div>
-                </div>
-
-                <!-- Right Content -->
-                <div class="col-lg-11 ps-lg-5">
-                    <div class="mb-3">
-                        <div id="CourseIncludes"></div>
-                    </div>
-
-                    <div class="mb-3">
-                        <strong>Topics:</strong>
-                    </div>
-
-                    <div class="row g-4 CourseTopics">
-                        <!-- Course Cards -->
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- start Course Outline details-->
-
-
         <!--START interest-section-->
         <section class="container py-5">
             <div class="row align-items-center">
                 <!-- Left Side: Image + Heading -->
                 <div class="col-md-6 text-center mb-4 mb-md-0">
                     <h2 class="fw-bold text-secondary mb-4">I'm Interested In This Program</h2>
-                    <img src="./assets/images/who-can-apply.avif" alt="Woman pointing"
-                        class="img-fluid" height="20px" />
+                    <img src="./assets/images/who-can-apply.avif" alt="Woman pointing" class="img-fluid"
+                        height="20px" />
                 </div>
 
                 <!-- Right Side -->
@@ -302,12 +295,9 @@
 
             </div>
         </section>
-
         <!--End interest-section-->
 
-
         <div class="container" id="TopicsData"></div>
-
 
         <!-- start contact us -->
         <section class="contact-us mt-5">
@@ -425,21 +415,15 @@
         </section>
         <!-- end join us -->
 
-
-
-
-
         <!-- start footer -->
         <div id="footer-container"></div>
         <!-- end footer -->
-
 
         <a href="#" id="scroll">
             <span></span>
         </a>
 
     </div>
-
 
     <script>
 
@@ -558,7 +542,7 @@
             .then(data => {
                 const Testimonials = data.Testimonials;
                 var Info = '';
-                
+
                 Testimonials.forEach(e => {
                     Info += `
                         <div class="text-center py-4">
