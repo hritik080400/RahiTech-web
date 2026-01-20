@@ -184,19 +184,11 @@
         },
         {
           "Heading": "Java Abstraction",
-          "SubPoints": [
-            "Abstract class",
-            "Interface",
-            "Abstract vs Interface"
-          ]
+          "SubPoints": ["Abstract class", "Interface", "Abstract vs Interface"]
         },
         {
           "Heading": "Java Encapsulation",
-          "SubPoints": [
-            "Package",
-            "Access Modifiers",
-            "Encapsulation"
-          ]
+          "SubPoints": ["Package", "Access Modifiers", "Encapsulation"]
         },
         {
           "Heading": "Interfaces and Abstract Classes",
@@ -222,9 +214,7 @@
         },
         {
           "Heading": "Java Array",
-          "SubPoints": [
-            "Java Array"
-          ]
+          "SubPoints": ["Java Array"]
         },
         {
           "Heading": "Java String",
@@ -351,29 +341,19 @@
         },
         {
           "Heading": "HTML",
-          "SubPoints": [
-            "HTML Basics",
-            "HTML Elements"
-          ]
+          "SubPoints": ["HTML Basics", "HTML Elements"]
         },
         {
           "Heading": "CSS",
-          "SubPoints": [
-            "CSS Introduction",
-            "CSS Syntax & Selectors"
-          ]
+          "SubPoints": ["CSS Introduction", "CSS Syntax & Selectors"]
         },
         {
           "Heading": "JavaScript",
-          "SubPoints": [
-            "JavaScript Overview"
-          ]
+          "SubPoints": ["JavaScript Overview"]
         },
         {
           "Heading": "Bootstrap",
-          "SubPoints": [
-            "Bootstrap Overview"
-          ]
+          "SubPoints": ["Bootstrap Overview"]
         },
         {
           "Heading": "Java MVC Architecture",
@@ -518,29 +498,19 @@
         },
         {
           "Heading": "HTML",
-          "SubPoints": [
-            "HTML Basics",
-            "HTML Elements"
-          ]
+          "SubPoints": ["HTML Basics", "HTML Elements"]
         },
         {
           "Heading": "CSS",
-          "SubPoints": [
-            "CSS Introduction",
-            "CSS Syntax & Selectors"
-          ]
+          "SubPoints": ["CSS Introduction", "CSS Syntax & Selectors"]
         },
         {
           "Heading": "JavaScript",
-          "SubPoints": [
-            "JavaScript Overview"
-          ]
+          "SubPoints": ["JavaScript Overview"]
         },
         {
           "Heading": "Bootstrap",
-          "SubPoints": [
-            "Bootstrap Overview"
-          ]
+          "SubPoints": ["Bootstrap Overview"]
         },
         {
           "Heading": "Java MVC Architecture",
@@ -1078,6 +1048,500 @@
         }
       ]
     },
+    "DA": {
+      "CourseName": "Data Analytics",
+      "CourseIncludes": {
+        "Duration": "6-7 Months",
+        "Prerequisites": [
+          {
+            "P": "Basic knowledge of statistics and mathematics."
+          },
+          {
+            "P": "Any graduate."
+          }
+        ]
+      },
+      "CourseDetails": [
+        {
+          "Heading": "Module 1: Excel",
+          "SubPoints": [
+            "Excel Basics & Interface",
+            "Cell Referencing (Relative, Absolute, Mixed)",
+            "Data Types & Formatting",
+            "Data Cleaning & Formatting",
+            "Text Functions",
+            "Date & Time Functions",
+            "Data Validation & Conditional Formatting",
+            "Formulas & Functions",
+            "Lookup Functions",
+            "Tables & Data Management",
+            "Pivot Tables & Pivot Charts",
+            "Charts & Visualization",
+            "What-If Analysis & Solver",
+            "Excel & Power BI Integration"
+          ]
+        },
+        {
+          "Heading": "Module 2: SQL",
+          "SubPoints": [
+            "SQL & RDBMS Fundamentals",
+            "SELECT, WHERE, ORDER BY, Operators",
+            "Aggregation & GROUP BY",
+            "Constraints & Keys",
+            "Joins & Data Combination",
+            "Subqueries & CTEs",
+            "Window Functions",
+            "Data Cleaning with SQL",
+            "Database Design & Normalization",
+            "Views, Indexes & Stored Procedures",
+            "SQL for Data Analysis Projects"
+          ]
+        },
+        {
+          "Heading": "Module 3: Power BI",
+          "SubPoints": [
+            "Power BI Overview & Workflow",
+            "Data Sources & Power Query",
+            "Data Modeling & Relationships",
+            "DAX Fundamentals",
+            "Time Intelligence in DAX",
+            "Visualizations & Custom Visuals",
+            "Interactive Reports & Dashboards",
+            "Power BI Service & Sharing",
+            "Row-Level Security",
+            "Performance Optimization"
+          ]
+        },
+        {
+          "Heading": "Module 4: Tableau",
+          "SubPoints": [
+            "Tableau Interface & Data Connections",
+            "Dimensions vs Measures",
+            "Basic & Advanced Charts",
+            "Filters, Groups, Sets & Hierarchies",
+            "Calculated Fields",
+            "Parameters & Interactivity",
+            "Dashboards & Storytelling",
+            "Publishing to Tableau Server/Public"
+          ]
+        },
+        {
+          "Heading": "Module 5: Python for Data Analysis",
+          "SubPoints": [
+            "Python Basics",
+            "Pandas & NumPy",
+            "Data Cleaning & Transformation",
+            "Exploratory Data Analysis (EDA)",
+            "Data Visualization",
+            "Reading/Writing CSV, Excel & SQL Data",
+            "Automation with Functions & Loops",
+            "Jupyter Notebooks"
+          ]
+        },
+        {
+          "Heading": "Module 6: Statistics for Data Analysis",
+          "SubPoints": [
+            "Descriptive Statistics",
+            "Probability Concepts",
+            "Inferential Statistics",
+            "Hypothesis Testing",
+            "Correlation & Causation",
+            "Regression Analysis",
+            "ANOVA & Statistical Significance"
+          ]
+        }
+      ]
+    },
+    "CPEH": {
+      "CourseName": "Certified Professional Ethical Hacker",
+      "CourseIncludes": {
+        "Duration": "5 Months",
+        "Prerequisites": [
+          {
+            "P": "Foundational IT/networking knowledge."
+          },
+          {
+            "P": "Familiarity with digital tools is beneficial."
+          }
+        ]
+      },
+      "CourseDetails": [
+        {
+          "Heading": "Introduction to Ethical Hacking",
+          "SubPoints": [
+            "What and Why?",
+            "Differences",
+            "Security Definitions",
+            "Risk Management",
+            "Methodologies"
+          ]
+        },
+        {
+          "Heading": "Linux Fundamentals",
+          "SubPoints": [
+            "Core Concepts",
+            "The Shell and Essential Components",
+            "Managing Users",
+            "Basic Commands"
+          ]
+        },
+        {
+          "Heading": "Protocols",
+          "SubPoints": ["Network Models", "Protocols & Services"]
+        },
+        {
+          "Heading": "Cryptography",
+          "SubPoints": [
+            "Understanding Cryptography",
+            "Symmetric Encryption",
+            "Asymmetric Encryption",
+            "Hashing",
+            "Cryptography in Use",
+            "Cryptographic Attacks"
+          ]
+        },
+        {
+          "Heading": "Password Cracking",
+          "SubPoints": [
+            "What and Why",
+            "Attacks and Tools of the Trade",
+            "Countermeasures"
+          ]
+        },
+        {
+          "Heading": "Malware",
+          "SubPoints": [
+            "DoS & DDoS",
+            "Viruses & Backdoors",
+            "Trojans and Backdoors",
+            "Ransomware"
+          ]
+        },
+        {
+          "Heading": "Security Devices",
+          "SubPoints": ["Basic Security Elements", "Security Appliances"]
+        },
+        {
+          "Heading": "Information Gathering",
+          "SubPoints": [
+            "What Are We Looking For?",
+            "Where and How to Find Information",
+            "Tools for Information Gathering"
+          ]
+        },
+        {
+          "Heading": "Social Engineering",
+          "SubPoints": ["Types of Social Engineering", "Phishing Scams"]
+        },
+        {
+          "Heading": "Reconnaissance",
+          "SubPoints": [
+            "Objectives of Reconnaissance",
+            "Port Scanning",
+            "Reconnaissance Tools",
+            "Banner Grabbing",
+            "Enumeration"
+          ]
+        },
+        {
+          "Heading": "Vulnerability Assessment",
+          "SubPoints": [
+            "What Is a Vulnerability Assessment",
+            "Tools of the Trade",
+            "Testing Internal and External Systems"
+          ]
+        },
+        {
+          "Heading": "Network Attacks",
+          "SubPoints": ["Sniffing Techniques", "Session Hijacking"]
+        },
+        {
+          "Heading": "Hacking Servers",
+          "SubPoints": [
+            "Understanding Servers",
+            "What Is an Exploit?",
+            "Tools of the Trade"
+          ]
+        },
+        {
+          "Heading": "Hacking Web Technologies",
+          "SubPoints": [
+            "OWASP Top 10",
+            "SQL Injection",
+            "Cross-Site Scripting (XSS)"
+          ]
+        },
+        {
+          "Heading": "Hacking Wireless Networks",
+          "SubPoints": [
+            "Wireless Technologies",
+            "Mobile and IoT Technologies",
+            "Tools Used",
+            "Hacking Techniques",
+            "Countermeasures"
+          ]
+        },
+        {
+          "Heading": "Maintaining Access and Covering Tracks",
+          "SubPoints": ["Maintaining Access", "Covering Tracks"]
+        }
+      ]
+    },
+    "CPTE": {
+      "courseName": "Certified Penetration Testing Engineer",
+      "courseIncludes": {
+        "Duration": "5 Months",
+        "Prerequisites": [
+          {
+            "P": "Sound Knowledge of TCP/IP."
+          },
+          {
+            "P": "Basic Knowledge of Linux."
+          }
+        ]
+      },
+      "CourseDetails": [
+        {
+          "Heading": "Business and Technical Logistics of Pen Testing",
+          "SubPoints": [
+            "What is Penetration Testing?",
+            "Today’s Threats",
+            "Staying up to Date",
+            "Pen Testing Methodology",
+            "Pre-Engagement Activities"
+          ]
+        },
+        {
+          "Heading": "Information Gathering Reconnaissance – Passive (External Only)",
+          "SubPoints": [
+            "What Are We Looking For?",
+            "Keeping Track of Findings",
+            "Where and How to Find Information",
+            "Tools for Information Gathering",
+            "Countermeasures"
+          ]
+        },
+        {
+          "Heading": "Detecting Live Systems – Reconnaissance (Active)",
+          "SubPoints": [
+            "What Are We Looking For?",
+            "Reaching Out",
+            "Port Scanning",
+            "Reconnaissance Tools",
+            "Countermeasures"
+          ]
+        },
+        {
+          "Heading": "Banner Grabbing and Enumeration",
+          "SubPoints": ["Banner Grabbing", "Enumeration"]
+        },
+        {
+          "Heading": "Automated Vulnerability Assessment",
+          "SubPoints": [
+            "What Is a Vulnerability Assessment?",
+            "Tools of the Trade",
+            "Testing Internal and External Systems",
+            "Dealing with the Results"
+          ]
+        },
+        {
+          "Heading": "Hacking Operating Systems",
+          "SubPoints": [
+            "Key Loggers",
+            "Password Attacks",
+            "Rootkits and Related Threats",
+            "Clearing Tracks"
+          ]
+        },
+        {
+          "Heading": "Advanced Assessment and Exploitation Techniques",
+          "SubPoints": ["Buffer Overflow", "Exploits", "Exploit Frameworks"]
+        },
+        {
+          "Heading": "Evasion Techniques",
+          "SubPoints": [
+            "Evading Firewalls",
+            "Evading Honeypots",
+            "Evading Intrusion Detection Systems (IDS)"
+          ]
+        },
+        {
+          "Heading": "Hacking with PowerShell",
+          "SubPoints": [
+            "PowerShell Fundamentals and Use Cases",
+            "Finding Passwords with PowerShell"
+          ]
+        },
+        {
+          "Heading": "Networks and Sniffing",
+          "SubPoints": ["Sniffing Techniques"]
+        },
+        {
+          "Heading": "Accessing and Hacking Web Technologies",
+          "SubPoints": [
+            "OWASP Top 10",
+            "SQL Injection",
+            "Cross-Site Scripting (XSS)"
+          ]
+        },
+        {
+          "Heading": "Mobile and IoT Hacking",
+          "SubPoints": [
+            "Target Devices Overview",
+            "Risk Assessment",
+            "Potential Attack Vectors",
+            "Hardening Mobile and IoT Devices"
+          ]
+        },
+        {
+          "Heading": "Report Writing Basics",
+          "SubPoints": [
+            "Report Components",
+            "Report Results Matrix",
+            "Recommendations"
+          ]
+        }
+      ]
+    },
+    "AWS": {
+      "CourseName": "AWS Certified Solutions Architect Associate",
+      "CourseIncludes": {
+        "Duration": "1 Months",
+        "Prerequisites": [
+          {
+            "P": "Anyone looking to upgrade their Cloud knowledge."
+          },
+          {
+            "P": "Any graduate."
+          }
+        ]
+      },
+      "CourseDetails": [
+        {
+          "Heading": "Introduction to Cloud Computing",
+          "SubPoints": [
+            "Introduction to Cloud Computing",
+            "Essential Characteristics of Cloud Computing",
+            "Service Models in Cloud Computing",
+            "Deployment Models in Cloud Computing",
+            "Introduction to AWS",
+            "AWS Account Creation and Free Tier Limitations"
+          ]
+        },
+        {
+          "Heading": "Identity and Access Management (IAM)",
+          "SubPoints": [
+            "Root Account vs IAM User",
+            "Multi-Factor Authentication for Users",
+            "IAM Password Policies",
+            "Creating Customer Managed Policies",
+            "Groups",
+            "Roles"
+          ]
+        },
+        {
+          "Heading": "S3 Storage",
+          "SubPoints": [
+            "Introduction to Simple Storage Service (S3)",
+            "Storage Classes",
+            "Versioning",
+            "Cross-Region Replication",
+            "Lifecycle Management",
+            "Static Website Hosting with S3",
+            "Enabling Cross-Account Access for S3",
+            "S3 Cross-Account Access and Pre-Signed URLs",
+            "Storage Gateway"
+          ]
+        },
+        {
+          "Heading": "Linux Introduction",
+          "SubPoints": [
+            "Linux Basics for AWS",
+            "Linux Installation and Basic Commands",
+            "Web Server and Services Configuration"
+          ]
+        },
+        {
+          "Heading": "Compute Services",
+          "SubPoints": [
+            "EC2 Instance Launch Wizard",
+            "EC2 Instance Types",
+            "Generating Public and Private Keys for EC2",
+            "Security Groups",
+            "Volumes and Snapshots",
+            "Creating Custom Amazon Machine Images (AMI)",
+            "RAID Overview and Configuration",
+            "User Data and Metadata",
+            "Elastic Load Balancers and Health Checks",
+            "Auto Scaling Groups",
+            "CloudWatch",
+            "Billing Alarms and EC2 Instance Alarms",
+            "AWS CLI and EC2 Roles",
+            "Elastic File System (EFS)",
+            "Placement Groups"
+          ]
+        },
+        {
+          "Heading": "Route 53",
+          "SubPoints": [
+            "DNS Records Overview",
+            "Routing Policies",
+            "Hosting Sample Website and Configuring Policies",
+            "Simple Routing Policy"
+          ]
+        },
+        {
+          "Heading": "Databases",
+          "SubPoints": [
+            "Launching RDS Instances (MySQL, MSSQL, Aurora)",
+            "DynamoDB",
+            "ElastiCache"
+          ]
+        },
+        {
+          "Heading": "VPC (Virtual Private Cloud)",
+          "SubPoints": [
+            "Networking Basics",
+            "Creating Custom VPCs and Subnets",
+            "Network ACLs",
+            "Route Tables and Internet Gateway (IGW)",
+            "VPC Peering",
+            "Flow Log Creation"
+          ]
+        },
+        {
+          "Heading": "Application Services",
+          "SubPoints": [
+            "Simple Email Service (SES)",
+            "Simple Queue Service (SQS)",
+            "Simple Workflow Service (SWF)",
+            "Simple Notification Service (SNS)",
+            "Server Migration Service (SMS)"
+          ]
+        },
+        {
+          "Heading": "Monitoring Tools",
+          "SubPoints": ["Creating Custom Metrics with CloudWatch"]
+        },
+        {
+          "Heading": "Security Options",
+          "SubPoints": [
+            "CloudTrail",
+            "AWS Config",
+            "Key Management Service (KMS)",
+            "AWS Certificate Manager"
+          ]
+        },
+        {
+          "Heading": "Tools and Platforms",
+          "SubPoints": [
+            "AWS Free Tier Account",
+            "PuTTY and PuTTY KeyGen Tools",
+            "AWS PPT"
+          ]
+        }
+      ]
+    },
     "Angular": {
       "CourseName": "Frontend Development with Angular",
       "CourseIncludes": {
@@ -1408,6 +1872,337 @@
         }
       ]
     },
+    "CCNA": {
+      "CourseName": "Cisco Certified Network Associate",
+      "CourseIncludes": {
+        "Duration": "1.5 Months",
+        "Prerequisites": [
+          {
+            "P": "Any graduate."
+          },
+          {
+            "P": "Anyone looking to upgrade their networking knowledge."
+          }
+        ]
+      },
+      "CourseDetails": [
+        {
+          "Heading": "Course Introduction",
+          "SubPoints": [
+            "Overview of Cisco Certification",
+            "Understanding CCNA Goals and Exam Format",
+            "Introduction to Network Infrastructure"
+          ]
+        },
+        {
+          "Heading": "Network Fundamentals",
+          "SubPoints": [
+            "Network Components and Topologies",
+            "OSI and TCP/IP Models",
+            "Comparison of TCP and UDP",
+            "IPv4 and IPv6 Addressing",
+            "Subnetting, VLSM, and Summarization",
+            "Wireless Fundamentals"
+          ]
+        },
+        {
+          "Heading": "Network Access",
+          "SubPoints": [
+            "Switching Concepts and MAC Address Table",
+            "VLANs, Trunking, and Inter-VLAN Routing",
+            "Spanning Tree Protocol (STP)",
+            "EtherChannel, CDP, and LLDP"
+          ]
+        },
+        {
+          "Heading": "IP Connectivity",
+          "SubPoints": [
+            "Static and Dynamic Routing Concepts",
+            "RIP v1, RIP v2, and EIGRP",
+            "OSPFv2 Configuration",
+            "First Hop Redundancy Protocols (FHRP) and HSRP",
+            "Path Selection and Routing Tables"
+          ]
+        },
+        {
+          "Heading": "IP Services",
+          "SubPoints": [
+            "DHCP, DNS, NAT, and NTP",
+            "Syslog and SNMP",
+            "Network Device Management",
+            "QoS Fundamentals"
+          ]
+        },
+        {
+          "Heading": "Security Fundamentals",
+          "SubPoints": [
+            "Security Threats and Mitigation Techniques",
+            "Access Control Lists (ACLs)",
+            "Secure Device Access (SSH, HTTPS)",
+            "Layer 2 Security Best Practices",
+            "Wireless Security Fundamentals"
+          ]
+        },
+        {
+          "Heading": "Automation and Programmability",
+          "SubPoints": [
+            "Controller-Based Networking",
+            "REST APIs, JSON, and Network Automation Concepts",
+            "Cisco DNA Center Basics",
+            "CLI vs API vs Automation Tools"
+          ]
+        },
+        {
+          "Heading": "Tools and Platforms",
+          "SubPoints": [
+            "Cisco Packet Tracer / GNS3",
+            "Cisco IOS Command Line Interface (CLI)",
+            "Real or Simulated Cisco Lab Environment"
+          ]
+        }
+      ]
+    },
+    "DSE": {
+      "CourseName": "Desktop Support Engineer",
+      "CourseIncludes": {
+        "Duration": "2 Months",
+        "Prerequisites": [
+          {
+            "P": "Basic knowledge of statistics and mathematics."
+          },
+          {
+            "P": "Any graduate."
+          }
+        ]
+      },
+      "CourseDetails": [
+        {
+          "Heading": "Course Introduction",
+          "SubPoints": [
+            "Course Introduction",
+            "Introduction to Computers",
+            "Types of Computers"
+          ]
+        },
+        {
+          "Heading": "Components of Desktops and Laptops",
+          "SubPoints": [
+            "Types of Motherboards and Processors",
+            "Types of Hard Disks and RAM",
+            "Types of SMPS",
+            "PC Assembly"
+          ]
+        },
+        {
+          "Heading": "Installation and Configuration",
+          "SubPoints": [
+            "Types of Operating System Installation",
+            "Installation of Windows 10 and Windows 11",
+            "Installation of Linux",
+            "System Software and Application Software",
+            "Introduction to Antivirus and Installation"
+          ]
+        },
+        {
+          "Heading": "Printers and Scanners",
+          "SubPoints": [
+            "Different Types of Printers",
+            "Local and Network Printer Sharing",
+            "Printer Troubleshooting"
+          ]
+        },
+        {
+          "Heading": "MS Outlook",
+          "SubPoints": [
+            "MS Outlook Configuration",
+            "Difference Between PST and OST",
+            "MS Outlook Backup and Restore",
+            "MS Outlook Troubleshooting"
+          ]
+        },
+        {
+          "Heading": "Computer Networking",
+          "SubPoints": [
+            "Types of Networks: LAN, MAN, WAN",
+            "Introduction to Network Topologies",
+            "Cable Types: Coaxial, Twisted Pair, Fiber",
+            "Types of Connectors, Crimping and Patching",
+            "IPv4 and IPv6",
+            "Installation and Troubleshooting of LAN and WAN",
+            "Internet Troubleshooting"
+          ]
+        },
+        {
+          "Heading": "Server Operating Systems",
+          "SubPoints": [
+            "Windows Server Installation Requirements",
+            "Windows Server Installation",
+            "Workgroup vs Domain",
+            "Installation of Active Directory",
+            "Configuration of DNS, DHCP, and APIPA"
+          ]
+        },
+        {
+          "Heading": "Firewall and Ticketing Tools",
+          "SubPoints": [
+            "Windows Firewall Configuration",
+            "Windows Firewall Troubleshooting"
+          ]
+        },
+        {
+          "Heading": "Platforms",
+          "SubPoints": ["VMware"]
+        }
+      ]
+    },
+    "FMS": {
+      "CourseName": "FMS Engineer",
+      "CourseIncludes": {
+        "Duration": "2 Months",
+        "Prerequisites": [
+          { "P": "Basic knowledge of statistics and mathematics." },
+          {
+            "P": "Any graduate."
+          }
+        ]
+      },
+      "CourseDetails": [
+        {
+          "Heading": "Course Introduction",
+          "SubPoints": ["Introduction to Computers", "Types of Computers"]
+        },
+        {
+          "Heading": "Components of Desktops and Laptops",
+          "SubPoints": [
+            "Types of Motherboards and Processors",
+            "Types of Hard Disks and RAM",
+            "Types of SMPS",
+            "PC Assembly",
+            "Practical Troubleshooting"
+          ]
+        },
+        {
+          "Heading": "Operating System Installation",
+          "SubPoints": [
+            "Types of OS Installation",
+            "Installation of Windows",
+            "Functions of Operating System",
+            "Installation of Linux",
+            "Software Installation and Uninstallation",
+            "OS Troubleshooting"
+          ]
+        },
+        {
+          "Heading": "System and Application Software",
+          "SubPoints": [
+            "System Software",
+            "Application Software",
+            "Software Troubleshooting"
+          ]
+        },
+        {
+          "Heading": "Printers and Scanners",
+          "SubPoints": [
+            "Introduction to Printers and Scanners",
+            "Types of Printers",
+            "Local and Network Printer Sharing",
+            "Printer Troubleshooting"
+          ]
+        },
+        {
+          "Heading": "Virus and Anti-Virus",
+          "SubPoints": [
+            "Introduction to Virus and Anti-Virus",
+            "Anti-Virus Installation",
+            "Virus Scanning and Updates",
+            "Anti-Virus Troubleshooting"
+          ]
+        },
+        {
+          "Heading": "MS Outlook",
+          "SubPoints": [
+            "MS Outlook Configuration",
+            "Difference Between PST and OST",
+            "MS Outlook Backup and Restore",
+            "MS Outlook Troubleshooting"
+          ]
+        },
+        {
+          "Heading": "Computer Networking Fundamentals",
+          "SubPoints": [
+            "Types of Networks: LAN, MAN, WAN",
+            "Network Topologies",
+            "Network Devices",
+            "OSI Model",
+            "TCP/IP Model",
+            "Protocols and Port Numbers"
+          ]
+        },
+        {
+          "Heading": "IP Addressing and Internet",
+          "SubPoints": [
+            "Physical and Logical Addressing",
+            "IPv4 and IPv6",
+            "Subnetting and IP Troubleshooting",
+            "Internet and Intranet",
+            "Modem and Router Configuration"
+          ]
+        },
+        {
+          "Heading": "Wireless Networking",
+          "SubPoints": [
+            "WiFi Access Point Installation",
+            "Wireless Security",
+            "Internet Troubleshooting"
+          ]
+        },
+        {
+          "Heading": "Server Operating Systems",
+          "SubPoints": [
+            "Types of Windows Servers",
+            "Windows Server Installation",
+            "Workgroup vs Domain",
+            "Active Directory and Domain",
+            "Joining PC to Domain"
+          ]
+        },
+        {
+          "Heading": "Server Services and Security",
+          "SubPoints": [
+            "User and Group Management",
+            "Basic Security Policies",
+            "DNS Configuration",
+            "DHCP Configuration",
+            "APIPA Configuration"
+          ]
+        },
+        {
+          "Heading": "Firewall and Remote Access",
+          "SubPoints": [
+            "Windows Firewall Configuration",
+            "Firewall Troubleshooting",
+            "Remote Desktop Tools",
+            "RDP, TeamViewer, AnyDesk"
+          ]
+        },
+        {
+          "Heading": "Access Point Configuration",
+          "SubPoints": [
+            "AP Installation and Configuration",
+            "MAC Binding and Security",
+            "Network Issue Troubleshooting"
+          ]
+        },
+        {
+          "Heading": "Revision and Practice",
+          "SubPoints": [
+            "Revision Sessions",
+            "Lab Practice",
+            "Mock Interview Preparation"
+          ]
+        }
+      ]
+    },
     "VMWare": {
       "CourseName": "VMWare",
       "CourseIncludes": {
@@ -1612,11 +2407,7 @@
         },
         {
           "Heading": "SDK Overview",
-          "SubPoints": [
-            "Platforms",
-            "Tools",
-            "Versions"
-          ]
+          "SubPoints": ["Platforms", "Tools", "Versions"]
         },
         {
           "Heading": "Hello World App",
@@ -2222,48 +3013,48 @@
       ]
     }
   },
-  "Testimonials":[
+  "Testimonials": [
     {
-        "Name":"Hritik Bhoite",
-        "Image":"assets/images/Hritik_Bhoite.png",
-        "Title":"Lorem ipsum...",
-        "Date":"01-12-2025",
-        "Text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+      "Name": "Hritik Bhoite",
+      "Image": "assets/images/Hritik_Bhoite.png",
+      "Title": "Lorem ipsum...",
+      "Date": "01-12-2025",
+      "Text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
     },
     {
-        "Name":"Pranav Mane",
-        "Image":"assets/images/Pranav_Mane.png",
-        "Title":"Lorem ipsum...",
-        "Date":"01-12-2025",
-        "Text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+      "Name": "Pranav Mane",
+      "Image": "assets/images/Pranav_Mane.png",
+      "Title": "Lorem ipsum...",
+      "Date": "01-12-2025",
+      "Text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
     },
     {
-        "Name":"Akash Gode",
-        "Image":"assets/images/Akash_Gode.png",
-        "Title":"Lorem ipsum...",
-        "Date":"01-12-2025",
-        "Text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+      "Name": "Akash Gode",
+      "Image": "assets/images/Akash_Gode.png",
+      "Title": "Lorem ipsum...",
+      "Date": "01-12-2025",
+      "Text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
     },
     {
-        "Name":"Hritik Bhoite",
-        "Image":"assets/images/Hritik_Bhoite.png",
-        "Title":"Lorem ipsum...",
-        "Date":"01-12-2025",
-        "Text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+      "Name": "Hritik Bhoite",
+      "Image": "assets/images/Hritik_Bhoite.png",
+      "Title": "Lorem ipsum...",
+      "Date": "01-12-2025",
+      "Text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
     },
     {
-        "Name":"Pranav Mane",
-        "Image":"assets/images/Pranav_Mane.png",
-        "Title":"Lorem ipsum...",
-        "Date":"01-12-2025",
-        "Text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+      "Name": "Pranav Mane",
+      "Image": "assets/images/Pranav_Mane.png",
+      "Title": "Lorem ipsum...",
+      "Date": "01-12-2025",
+      "Text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
     },
     {
-        "Name":"Akash Gode",
-        "Image":"assets/images/Akash_Gode.png",
-        "Title":"Lorem ipsum...",
-        "Date":"01-12-2025",
-        "Text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+      "Name": "Akash Gode",
+      "Image": "assets/images/Akash_Gode.png",
+      "Title": "Lorem ipsum...",
+      "Date": "01-12-2025",
+      "Text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
     }
   ]
 }
