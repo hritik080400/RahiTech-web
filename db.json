@@ -2219,8 +2219,150 @@
             "Learning digital marketing opens doors to careers in branding, growth hacking, performance marketing, and more."
           ]
         }
-      ]
-    }
+      ],
+      "DataAnalyst": {
+        "CourseName": "Data Analyst",
+        "CourseIncludes": {
+          "Duration": "6-7 Months",
+          "Mode": "Classroom",
+          "Level": "Beginner to Intermediate",
+          "HandsOn": "Real-world Scenarios & Simulations",
+          "Qualification": "Any graduate",
+          "Prerequisites": [
+            {
+              "P": "There is no strict prerequisite for this course."
+            },
+            {
+              "P": "Basic computer knowledge will be an advantage."
+            }
+          ],
+          "Topics": [
+            {
+              "Color": "bg-success",
+              "Icons": "<i class='fa fa-file-excel-o'></i>",
+              "Topic": "Excel"
+            },
+            {
+              "Color": "bg-info",
+              "Icons": "<i class='fa fa-database'></i>",
+              "Topic": "SQL"
+            },
+            {
+              "Color": "bg-primary",
+              "Icons": "<i class='fa fa-bar-chart'></i>",
+              "Topic": "Power BI"
+            },
+            {
+              "Color": "bg-warning",
+              "Icons": "<i class='fa fa-table'></i>",
+              "Topic": "Tableau"
+            },
+            {
+              "Color": "bg-danger",
+              "Icons": "<i class='fa fa-code'></i>",
+              "Topic": "Python"
+            },
+            {
+              "Color": "bg-secondary",
+              "Icons": "<i class='fa fa-calculator'></i>",
+              "Topic": "Statistics"
+            }
+          ]
+        },
+        "CourseDetails": [
+          {
+            "Heading": "Excel",
+            "SubPoints": [
+              "Excel Basics & Interface: Workbook, Worksheet, Ribbons and Menus",
+              "Cell referencing: Relative, Absolute, Mixed",
+              "Data types and formatting",
+              "Basic math operations",
+              "Data Cleaning & Formatting: Text functions (LEFT, RIGHT, MID, LEN, TRIM, UPPER, LOWER, PROPER, SUBSTITUTE, FIND, SEARCH)",
+              "Date & Time functions: TODAY, NOW, DATE, DAY, MONTH, YEAR, TEXT, NETWORKDAYS",
+              "Data Validation, Conditional Formatting, Remove Duplicates, Find & Replace, Flash Fill",
+              "Formulas & Functions: Logical (IF, AND, OR, NOT, IFERROR), Lookup (VLOOKUP, HLOOKUP, INDEX, MATCH, XLOOKUP)",
+              "Tables & Data Management: Excel Tables, Sorting & Filtering, Slicers, Freeze Panes",
+              "Pivot Tables & Pivot Charts: Create, Group, Calculated Fields, Pivot Charts",
+              "Charts & Visualization: Column, Line, Pie, Combo, Scatter, Histograms, Sparklines",
+              "Excel Data Analysis Tools: What-If Analysis, Solver, Analysis ToolPak",
+              "Power Query basics and exporting data to Power BI"
+            ]
+          },
+          {
+            "Heading": "SQL",
+            "SubPoints": [
+              "SQL Basics: What is SQL & RDBMS, Tables, rows, columns, keys",
+              "CRUD: SELECT, FROM, WHERE and operators (IN, BETWEEN, LIKE)",
+              "Sorting: ORDER BY, Limiting results (LIMIT/TOP)",
+              "Aggregation & Filtering: COUNT, SUM, AVG, MIN, MAX, GROUP BY, HAVING",
+              "Joins & Combining Data: INNER, LEFT, RIGHT, FULL, CROSS, SELF JOIN; ON vs USING",
+              "Subqueries, CTEs & Window Functions: WITH, recursive CTEs, ROW_NUMBER, RANK, LEAD, LAG",
+              "Data Cleaning with SQL: TRIM, UPPER/LOWER, SUBSTRING, REPLACE, REGEXP_REPLACE, COALESCE, CAST/CONVERT",
+              "Database Design & Normalization: schemas, star/snowflake design, normalization vs denormalization",
+              "Advanced: Views, Temporary Tables, Indexes (intro), Stored Procedures (overview)",
+              "SQL for Analysis: KPI queries, segmentation, sales trends, A/B test analysis, funnel analysis"
+            ]
+          },
+          {
+            "Heading": "Power BI",
+            "SubPoints": [
+              "Power BI Overview: Desktop, Service, Mobile, Gateway",
+              "Get Data & Power Query: connect Excel/SQL/Web, clean & transform data",
+              "Data Modeling: relationships, cardinality, calculated columns and measures (DAX)",
+              "DAX basics: SUM, COUNT, AVERAGE, DISTINCTCOUNT, CALCULATE, FILTER, ALL",
+              "Time Intelligence: TOTALYTD, SAMEPERIODLASTYEAR, DATESINPERIOD",
+              "Visualizations: charts, slicers, tables, matrix, tooltips",
+              "Reports & Dashboards: themes, bookmarks, drill-through, publish to service",
+              "Power BI Service: scheduled refresh, workspaces, sharing, row-level security (RLS)"
+            ]
+          },
+          {
+            "Heading": "Tableau",
+            "SubPoints": [
+              "Tableau Interface & Data Connections",
+              "Dimensions vs Measures",
+              "Basic visuals: Bar, Line, Pie, Map, TreeMap",
+              "Filters, Groups, Sets, Hierarchies",
+              "Calculated Fields and Table Calculations",
+              "Parameters and Interactivity",
+              "Dashboards and Storytelling",
+              "Publishing to Tableau Public or Server"
+            ]
+          },
+          {
+            "Heading": "Python for Data Analysis",
+            "SubPoints": [
+              "Python Basics: variables, data types, control structures",
+              "Key libraries: pandas, numpy, matplotlib, seaborn",
+              "Data cleaning and transformation with pandas",
+              "Exploratory Data Analysis (EDA) and visualization",
+              "Reading/writing CSV, Excel, SQL data",
+              "Basic automation using loops and functions",
+              "Jupyter Notebooks for analysis and reporting"
+            ]
+          },
+          {
+            "Heading": "Statistics for Data Analysis",
+            "SubPoints": [
+              "Descriptive Statistics: Mean, Median, Mode, Variance, Std Dev",
+              "Probability concepts and distributions",
+              "Inferential Statistics: sampling, confidence intervals, p-values",
+              "Hypothesis Testing: t-tests, z-tests, chi-square",
+              "Correlation vs Causation",
+              "Regression Analysis: linear, multiple, logistic",
+              "ANOVA and statistical significance"
+            ]
+          },
+          {
+            "Heading": "Tools & Platforms",
+            "SubPoints": [
+              "Excel, SQL, Power BI, Tableau, Python",
+              "Hands-on labs: real-world scenarios & simulations",
+              "Sample projects: KPI dashboard, customer segmentation, sales analysis"
+            ]
+          }
+        ]
+      }
   },
   "Testimonials":[
     {
@@ -2266,4 +2408,6 @@
         "Text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
     }
   ]
+}
+
 }

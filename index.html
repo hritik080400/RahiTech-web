@@ -107,7 +107,9 @@
     <div class="page-wrapper" id="page-wrapper">
 
         <!-- Start Header -->
-        <div id="navbar-container"></div>
+        <div id="navbar-container">
+            
+        </div>
         <!-- End Header -->
 
         <!-- start slider -->
@@ -901,9 +903,12 @@
             });
         });
         function GetCourse() {
+
             let course = document.getElementById('FormCourses').value.toLowerCase();
 
             //  alert("Course is "+ course);
+
+            
 
             fetch('db.json')
                 .then(response => {
@@ -913,6 +918,7 @@
                     return response.json();
                 })
                 .then(data => {
+                    
                     const courseData = data.AllCourseDetails;
                     const availableCourses = Object.keys(courseData);
                     const matchedCourse = availableCourses.find(c => c.toLowerCase() === course);
