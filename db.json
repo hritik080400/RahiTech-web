@@ -184,11 +184,19 @@
         },
         {
           "Heading": "Java Abstraction",
-          "SubPoints": ["Abstract class", "Interface", "Abstract vs Interface"]
+          "SubPoints": [
+            "Abstract class",
+            "Interface",
+            "Abstract vs Interface"
+          ]
         },
         {
           "Heading": "Java Encapsulation",
-          "SubPoints": ["Package", "Access Modifiers", "Encapsulation"]
+          "SubPoints": [
+            "Package",
+            "Access Modifiers",
+            "Encapsulation"
+          ]
         },
         {
           "Heading": "Interfaces and Abstract Classes",
@@ -214,7 +222,9 @@
         },
         {
           "Heading": "Java Array",
-          "SubPoints": ["Java Array"]
+          "SubPoints": [
+            "Java Array"
+          ]
         },
         {
           "Heading": "Java String",
@@ -341,19 +351,29 @@
         },
         {
           "Heading": "HTML",
-          "SubPoints": ["HTML Basics", "HTML Elements"]
+          "SubPoints": [
+            "HTML Basics",
+            "HTML Elements"
+          ]
         },
         {
           "Heading": "CSS",
-          "SubPoints": ["CSS Introduction", "CSS Syntax & Selectors"]
+          "SubPoints": [
+            "CSS Introduction",
+            "CSS Syntax & Selectors"
+          ]
         },
         {
           "Heading": "JavaScript",
-          "SubPoints": ["JavaScript Overview"]
+          "SubPoints": [
+            "JavaScript Overview"
+          ]
         },
         {
           "Heading": "Bootstrap",
-          "SubPoints": ["Bootstrap Overview"]
+          "SubPoints": [
+            "Bootstrap Overview"
+          ]
         },
         {
           "Heading": "Java MVC Architecture",
@@ -498,19 +518,29 @@
         },
         {
           "Heading": "HTML",
-          "SubPoints": ["HTML Basics", "HTML Elements"]
+          "SubPoints": [
+            "HTML Basics",
+            "HTML Elements"
+          ]
         },
         {
           "Heading": "CSS",
-          "SubPoints": ["CSS Introduction", "CSS Syntax & Selectors"]
+          "SubPoints": [
+            "CSS Introduction",
+            "CSS Syntax & Selectors"
+          ]
         },
         {
           "Heading": "JavaScript",
-          "SubPoints": ["JavaScript Overview"]
+          "SubPoints": [
+            "JavaScript Overview"
+          ]
         },
         {
           "Heading": "Bootstrap",
-          "SubPoints": ["Bootstrap Overview"]
+          "SubPoints": [
+            "Bootstrap Overview"
+          ]
         },
         {
           "Heading": "Java MVC Architecture",
@@ -1059,6 +1089,33 @@
           {
             "P": "Any graduate."
           }
+        ],
+        "Topics": [
+          {
+            "Color": "bg-success",
+            "Icons": "<i class='fa fa-file-excel-o'></i>",
+            "Topic": "Excel"
+          },
+          {
+            "Color": "bg-info",
+            "Icons": "<i class='fa fa-database'></i>",
+            "Topic": "SQL"
+          },
+          {
+            "Color": "bg-warning",
+            "Icons": "<i class='fa fa-bar-chart'></i>",
+            "Topic": "PowerBI"
+          },
+          {
+            "Color": "bg-primary",
+            "Icons": "<i class='fa fa-table'></i>",
+            "Topic": "Tableau"
+          },
+          {
+            "Color": "bg-danger",
+            "Icons": "<i class='fa fa-code'></i>",
+            "Topic": "Python"
+          }
         ]
       },
       "CourseDetails": [
@@ -1163,6 +1220,28 @@
           {
             "P": "Familiarity with digital tools is beneficial."
           }
+        ],
+        "Topics": [
+          {
+            "Color": "bg-dark",
+            "Icons": "<i class='fa fa-user-secret'></i>",
+            "Topic": "Ethical Hacking"
+          },
+          {
+            "Color": "bg-success",
+            "Icons": "<i class='fa fa-search'></i>",
+            "Topic": "Scanning"
+          },
+          {
+            "Color": "bg-danger",
+            "Icons": "<i class='fa fa-laptop'></i>",
+            "Topic": "System Hacking"
+          },
+          {
+            "Color": "bg-warning",
+            "Icons": "<i class='fa fa-wifi'></i>",
+            "Topic": "Sniffing"
+          }
         ]
       },
       "CourseDetails": [
@@ -1187,7 +1266,10 @@
         },
         {
           "Heading": "Protocols",
-          "SubPoints": ["Network Models", "Protocols & Services"]
+          "SubPoints": [
+            "Network Models",
+            "Protocols & Services"
+          ]
         },
         {
           "Heading": "Cryptography",
@@ -1219,7 +1301,10 @@
         },
         {
           "Heading": "Security Devices",
-          "SubPoints": ["Basic Security Elements", "Security Appliances"]
+          "SubPoints": [
+            "Basic Security Elements",
+            "Security Appliances"
+          ]
         },
         {
           "Heading": "Information Gathering",
@@ -1231,7 +1316,10 @@
         },
         {
           "Heading": "Social Engineering",
-          "SubPoints": ["Types of Social Engineering", "Phishing Scams"]
+          "SubPoints": [
+            "Types of Social Engineering",
+            "Phishing Scams"
+          ]
         },
         {
           "Heading": "Reconnaissance",
@@ -1253,7 +1341,10 @@
         },
         {
           "Heading": "Network Attacks",
-          "SubPoints": ["Sniffing Techniques", "Session Hijacking"]
+          "SubPoints": [
+            "Sniffing Techniques",
+            "Session Hijacking"
+          ]
         },
         {
           "Heading": "Hacking Servers",
@@ -1283,13 +1374,16 @@
         },
         {
           "Heading": "Maintaining Access and Covering Tracks",
-          "SubPoints": ["Maintaining Access", "Covering Tracks"]
+          "SubPoints": [
+            "Maintaining Access",
+            "Covering Tracks"
+          ]
         }
       ]
     },
     "CPTE": {
-      "courseName": "Certified Penetration Testing Engineer",
-      "courseIncludes": {
+      "CourseName": "Certified Penetration Testing Engineer",
+      "CourseIncludes": {
         "Duration": "5 Months",
         "Prerequisites": [
           {
@@ -1297,6 +1391,28 @@
           },
           {
             "P": "Basic Knowledge of Linux."
+          }
+        ],
+        "Topics": [
+          {
+            "Color": "bg-danger",
+            "Icons": "<i class='fa fa-bug'></i>",
+            "Topic": "Penetration Testing"
+          },
+          {
+            "Color": "bg-warning",
+            "Icons": "<i class='fa fa-bomb'></i>",
+            "Topic": "Exploitation"
+          },
+          {
+            "Color": "bg-info",
+            "Icons": "<i class='fa fa-shield'></i>",
+            "Topic": "Vulnerability"
+          },
+          {
+            "Color": "bg-secondary",
+            "Icons": "<i class='fa fa-file-text'></i>",
+            "Topic": "Reporting"
           }
         ]
       },
@@ -1333,7 +1449,10 @@
         },
         {
           "Heading": "Banner Grabbing and Enumeration",
-          "SubPoints": ["Banner Grabbing", "Enumeration"]
+          "SubPoints": [
+            "Banner Grabbing",
+            "Enumeration"
+          ]
         },
         {
           "Heading": "Automated Vulnerability Assessment",
@@ -1355,7 +1474,11 @@
         },
         {
           "Heading": "Advanced Assessment and Exploitation Techniques",
-          "SubPoints": ["Buffer Overflow", "Exploits", "Exploit Frameworks"]
+          "SubPoints": [
+            "Buffer Overflow",
+            "Exploits",
+            "Exploit Frameworks"
+          ]
         },
         {
           "Heading": "Evasion Techniques",
@@ -1374,7 +1497,9 @@
         },
         {
           "Heading": "Networks and Sniffing",
-          "SubPoints": ["Sniffing Techniques"]
+          "SubPoints": [
+            "Sniffing Techniques"
+          ]
         },
         {
           "Heading": "Accessing and Hacking Web Technologies",
@@ -1413,6 +1538,28 @@
           },
           {
             "P": "Any graduate."
+          }
+        ],
+        "Topics": [
+          {
+            "Color": "bg-warning",
+            "Icons": "<i class='fa fa-server'></i>",
+            "Topic": "EC2"
+          },
+          {
+            "Color": "bg-success",
+            "Icons": "<i class='fa fa-cloud'></i>",
+            "Topic": "S3"
+          },
+          {
+            "Color": "bg-primary",
+            "Icons": "<i class='fa fa-sitemap'></i>",
+            "Topic": "VPC"
+          },
+          {
+            "Color": "bg-danger",
+            "Icons": "<i class='fa fa-users'></i>",
+            "Topic": "IAM"
           }
         ]
       },
@@ -1521,7 +1668,9 @@
         },
         {
           "Heading": "Monitoring Tools",
-          "SubPoints": ["Creating Custom Metrics with CloudWatch"]
+          "SubPoints": [
+            "Creating Custom Metrics with CloudWatch"
+          ]
         },
         {
           "Heading": "Security Options",
@@ -1883,6 +2032,28 @@
           {
             "P": "Anyone looking to upgrade their networking knowledge."
           }
+        ],
+        "Topics": [
+          {
+            "Color": "bg-info",
+            "Icons": "<i class='fa fa-sitemap'></i>",
+            "Topic": "Networking"
+          },
+          {
+            "Color": "bg-success",
+            "Icons": "<i class='fa fa-random'></i>",
+            "Topic": "Routing"
+          },
+          {
+            "Color": "bg-warning",
+            "Icons": "<i class='fa fa-exchange'></i>",
+            "Topic": "Switching"
+          },
+          {
+            "Color": "bg-primary",
+            "Icons": "<i class='fa fa-globe'></i>",
+            "Topic": "IP Addressing"
+          }
         ]
       },
       "CourseDetails": [
@@ -1973,6 +2144,28 @@
           {
             "P": "Any graduate."
           }
+        ],
+        "Topics": [
+          {
+            "Color": "bg-secondary",
+            "Icons": "<i class='fa fa-microchip'></i>",
+            "Topic": "Hardware"
+          },
+          {
+            "Color": "bg-info",
+            "Icons": "<i class='fa fa-windows'></i>",
+            "Topic": "OS Installation"
+          },
+          {
+            "Color": "bg-warning",
+            "Icons": "<i class='fa fa-wrench'></i>",
+            "Topic": "Troubleshooting"
+          },
+          {
+            "Color": "bg-success",
+            "Icons": "<i class='fa fa-wifi'></i>",
+            "Topic": "Networking"
+          }
         ]
       },
       "CourseDetails": [
@@ -2051,7 +2244,9 @@
         },
         {
           "Heading": "Platforms",
-          "SubPoints": ["VMware"]
+          "SubPoints": [
+            "VMware"
+          ]
         }
       ]
     },
@@ -2060,16 +2255,43 @@
       "CourseIncludes": {
         "Duration": "2 Months",
         "Prerequisites": [
-          { "P": "Basic knowledge of statistics and mathematics." },
+          {
+            "P": "Basic knowledge of statistics and mathematics."
+          },
           {
             "P": "Any graduate."
+          }
+        ],
+        "Topics": [
+          {
+            "Color": "bg-primary",
+            "Icons": "<i class='fa fa-list-alt'></i>",
+            "Topic": "Asset Mgmt"
+          },
+          {
+            "Color": "bg-success",
+            "Icons": "<i class='fa fa-phone'></i>",
+            "Topic": "Helpdesk"
+          },
+          {
+            "Color": "bg-info",
+            "Icons": "<i class='fa fa-ticket'></i>",
+            "Topic": "Ticketing"
+          },
+          {
+            "Color": "bg-warning",
+            "Icons": "<i class='fa fa-users'></i>",
+            "Topic": "Vendor Mgmt"
           }
         ]
       },
       "CourseDetails": [
         {
           "Heading": "Course Introduction",
-          "SubPoints": ["Introduction to Computers", "Types of Computers"]
+          "SubPoints": [
+            "Introduction to Computers",
+            "Types of Computers"
+          ]
         },
         {
           "Heading": "Components of Desktops and Laptops",
@@ -2407,7 +2629,11 @@
         },
         {
           "Heading": "SDK Overview",
-          "SubPoints": ["Platforms", "Tools", "Versions"]
+          "SubPoints": [
+            "Platforms",
+            "Tools",
+            "Versions"
+          ]
         },
         {
           "Heading": "Hello World App",
