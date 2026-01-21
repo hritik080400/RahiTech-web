@@ -2,7 +2,7 @@
 const fs = require('fs');
 
 try {
-    const data = fs.readFileSync('db.json', 'utf8');
+    const data = fs.readFileSync('assets/js/db.json', 'utf8');
     const json = JSON.parse(data);
     const keys = Object.keys(json.AllCourseDetails);
     console.log("Course Keys:", keys);

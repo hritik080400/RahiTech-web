@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-    const jsonUrl = "db.json";
+    const jsonUrl = "assets/js/db.json";
     const pillsTab = document.getElementById("pills-tab");
     const pillsTabContent = document.getElementById("pills-tabContent");
 

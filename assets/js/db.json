@@ -3239,6 +3239,68 @@
       ]
     }
   },
+  "Blogs": [
+    {
+      "ID": "1",
+      "Image": "assets/images/blog_3.jpg",
+      "Date": "2024-07-25",
+      "DisplayDate": "25th July, 2024",
+      "Title": "The Rise of Cyber Security Jobs",
+      "Text": "With cyber threats on the rise, the demand for skilled security professionals is at an all-time high. Learn how you can start a career in ethical hacking.",
+      "Author": "Admin",
+      "Link": "blog-detail.html"
+    },
+    {
+      "ID": "2",
+      "Image": "assets/images/blog_2.jpg",
+      "Date": "2024-07-10",
+      "DisplayDate": "10th July, 2024",
+      "Title": "Why Networking is a Critical IT Skill",
+      "Text": "Even in the age of cloud computing, understanding core networking concepts like TCP/IP, DNS, and HTTP is crucial for every developer and admin.",
+      "Author": "Admin",
+      "Link": "blog-detail.html"
+    },
+    {
+      "ID": "3",
+      "Image": "assets/images/blog_3.jpg",
+      "Date": "2024-07-01",
+      "DisplayDate": "1st July, 2024",
+      "Title": "Free Workshop: Introduction to Data Science",
+      "Text": "Join us for an interactive workshop on Data Science and Analytics. Discover how data is driving business decisions and explore the career opportunities in this booming field.",
+      "Author": "Admin",
+      "Link": "blog-detail.html"
+    },
+    {
+      "ID": "4",
+      "Image": "assets/images/blog_2.jpg",
+      "Date": "2024-06-22",
+      "DisplayDate": "22nd June, 2024",
+      "Title": "Web Development Roadmap for 2024",
+      "Text": "From HTML/CSS to React and Node.js, discover the essential skills you need to become a successful Full Stack Web Developer in today's market.",
+      "Author": "Admin",
+      "Link": "blog-detail.html"
+    },
+    {
+      "ID": "5",
+      "Image": "assets/images/blog_2.jpg",
+      "Date": "2024-06-15",
+      "DisplayDate": "15th June, 2024",
+      "Title": "New Java Full Stack Batch Starting Soon",
+      "Text": "Kickstart your career with our upcoming Java Full Stack Development batch. Learn core concepts, frameworks, and build live projects under the guidance of industry experts.",
+      "Author": "Admin",
+      "Link": "blog-detail.html"
+    },
+    {
+      "ID": "6",
+      "Image": "assets/images/blog1.jpg",
+      "Date": "2024-05-20",
+      "DisplayDate": "20th May, 2024",
+      "Title": "Celebrating 100+ Placements this Quarter",
+      "Text": "We are proud to announce that over 100 Rahitech students have secured offers from top MNCs and startups this quarter. Their hard work and our dedicated placement support have paid off!",
+      "Author": "Admin",
+      "Link": "blog-detail.html"
+    }
+  ],
   "Testimonials": [
     {
       "Name": "Hritik Bhoite",
