@@ -110,18 +110,20 @@
                                 <div class="mb-3">
                                     <label for="exampleInputNumber">Phone Number</label>
                                     <input class="form-control" id="exampleInputNumber" placeholder="Enter Number"
-                                        type="email">
+                                        type="phone">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputMessage">Message</label>
                                     <input class="form-control" id="exampleInputMessage" placeholder="Message"
-                                        type="email">
+                                        type="text">
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" id="exampleCheck1" type="checkbox">
                                     <label class="form-check-label" for="exampleCheck1">Check me out</label>
                                 </div>
-                                <button class="btn theme-Red border-0 mt-4" type="submit">Send Message</button>
+                                <button class="btn theme-Red border-0 mt-4" type="button"
+                                    onclick="sendContactToWhatsapp('exampleInputName', 'exampleInputEmail1', 'exampleInputNumber', 'exampleInputMessage')">Send
+                                    Message</button>
                             </form>
                         </div>
                     </div>

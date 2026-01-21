@@ -6,19 +6,19 @@ Version: 1.0
 -----------------------------------------------------------*/
 
 /*pre loader*/
-$(window).on('load', function() {
+$(window).on('load', function () {
     $('.preloader').fadeOut();
 });
 
 /*animation on scroll*/
-$(document).ready(function() {
+$(document).ready(function () {
     AOS.init({
         duration: 1200,
     });
 });
 
 /*sticky menu*/
-$(document).on("scroll", function() {
+$(document).on("scroll", function () {
     if ($(document).scrollTop() > 86) {
         $("#header").addClass("sticky");
     } else {
@@ -49,7 +49,7 @@ var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
 
 for (i = 0; i < dropdown.length; i++) {
-    dropdown[i].addEventListener("click", function() {
+    dropdown[i].addEventListener("click", function () {
         this.classList.toggle("active");
         var dropdownContent = this.nextElementSibling;
         if (dropdownContent.style.display === "block") {
@@ -61,16 +61,16 @@ for (i = 0; i < dropdown.length; i++) {
 }
 
 /*top scroll*/
-$(document).ready(function() {
+$(document).ready(function () {
     $('#scroll').hide();
-    $(window).on('scroll', function() {
+    $(window).on('scroll', function () {
         if ($(this).scrollTop() > 100) {
             $('#scroll').fadeIn();
         } else {
             $('#scroll').fadeOut();
         }
     });
-    $('#scroll').on('click', function() {
+    $('#scroll').on('click', function () {
         $("html, body").animate({
             scrollTop: 0
         }, 1200);
@@ -79,7 +79,7 @@ $(document).ready(function() {
 });
 
 /*marquee*/
-var TxtType = function(el, toRotate, period) {
+var TxtType = function (el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
@@ -89,7 +89,7 @@ var TxtType = function(el, toRotate, period) {
     this.isDeleting = false;
 };
 
-TxtType.prototype.tick = function() {
+TxtType.prototype.tick = function () {
     var i = this.loopNum % this.toRotate.length;
     var fullTxt = this.toRotate[i];
 
@@ -117,12 +117,12 @@ TxtType.prototype.tick = function() {
         delta = 500;
     }
 
-    setTimeout(function() {
+    setTimeout(function () {
         that.tick();
     }, delta);
 };
 
-window.onload = function() {
+window.onload = function () {
     var elements = document.getElementsByClassName('typewrite');
     for (var i = 0; i < elements.length; i++) {
         var toRotate = elements[i].getAttribute('data-type');
@@ -137,3 +137,25 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+// Send WhatsApp Message Function for Contact Page
+function sendContactToWhatsapp(nameId, emailId, phoneId, messageId) {
+    var name = document.getElementById(nameId).value;
+    var email = document.getElementById(emailId).value;
+    var phone = document.getElementById(phoneId).value;
+    var msgInput = document.getElementById(messageId).value;
+
+    if (name === "" || email === "" || phone === "" || msgInput === "") {
+        alert("Please fill in all fields.");
+        return;
+    }
+
+    var message =
+        "Hello \n\n" +
+        "I am " + name + "\n\n" + msgInput;
+
+    // Using business phone number
+    var whatsappUrl = "https://wa.me/919421776347?text=" + encodeURIComponent(message);
+
+    window.open(whatsappUrl, '_blank');
+}
