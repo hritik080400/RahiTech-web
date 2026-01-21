@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <span class="me-3">
                                     <i class="fa fa-comments me-3 color-orange"></i>Comments </span>
                             </div>
-                            <a class="btn color-orange read-more mt-3" href="${blog.Link}">Read More</a>
+                            <!--<a class="btn color-orange read-more mt-3" href="${blog.Link}">Read More</a>-->
                         </div>
                     </div>
                 </div>
